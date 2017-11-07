@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>f79fec84-4d2e-439b-8072-45bc242a30b4</PackageIdentityName>
     <PackageIdentityPublisher>CN=PatrickG</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\obj\x86\Release\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\obj\x86\Release\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\bin\x86\Release\AppX</LayoutDir>
+    <LayoutDir>C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\bin\x86\Release\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\bin\x86\Release\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\bin\x86\Release\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\bin\x86\Release\UdpConnectionNew.exe">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\bin\x86\Release\UdpConnectionNew.exe">
       <PackagePath>entrypoint\UdpConnectionNew.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\.nuget\packages\microsoft.applicationinsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
@@ -349,7 +349,7 @@
     <AppxPackagedFile Include="C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Release\UnityEngineProxy.dll">
       <PackagePath>UnityEngineProxy.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\Unprocessed\WinRTLegacy.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\Unprocessed\WinRTLegacy.dll">
       <PackagePath>WinRTLegacy.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Release\UnityPlayer.dll">
@@ -373,257 +373,257 @@
     <AppxPackagedFile Include="C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\dotnet\x86\Release\WinRTBridge.winmd">
       <PackagePath>WinRTBridge.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\Resource.res">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\Resource.res">
       <PackagePath>Resource.res</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\Data\StreamingAssets\Vuforia\VuforiaMars_Images.xml">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\Data\StreamingAssets\Vuforia\VuforiaMars_Images.xml">
       <PackagePath>Data\StreamingAssets\Vuforia\VuforiaMars_Images.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\Data\StreamingAssets\Vuforia\VuforiaMars_Object_OT.xml">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\Data\StreamingAssets\Vuforia\VuforiaMars_Object_OT.xml">
       <PackagePath>Data\StreamingAssets\Vuforia\VuforiaMars_Object_OT.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\Data\StreamingAssets\Vuforia\VuforiaMars_VuMark.xml">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\Data\StreamingAssets\Vuforia\VuforiaMars_VuMark.xml">
       <PackagePath>Data\StreamingAssets\Vuforia\VuforiaMars_VuMark.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\VuforiaWrapper.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\VuforiaWrapper.dll">
       <PackagePath>VuforiaWrapper.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\Vuforia.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\Vuforia.dll">
       <PackagePath>Vuforia.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\Data\boot.config">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\Data\boot.config">
       <PackagePath>Data\boot.config</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\Data\globalgamemanagers">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\Data\globalgamemanagers">
       <PackagePath>Data\globalgamemanagers</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\Data\level0">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\Data\level0">
       <PackagePath>Data\level0</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\Data\Resources\unity default resources">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\Data\Resources\unity default resources">
       <PackagePath>Data\Resources\unity default resources</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\Data\Resources\unity_builtin_extra">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\Data\Resources\unity_builtin_extra">
       <PackagePath>Data\Resources\unity_builtin_extra</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\Data\globalgamemanagers.assets">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\Data\globalgamemanagers.assets">
       <PackagePath>Data\globalgamemanagers.assets</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\Data\resources.assets">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\Data\resources.assets">
       <PackagePath>Data\resources.assets</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\Data\sharedassets0.assets">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\Data\sharedassets0.assets">
       <PackagePath>Data\sharedassets0.assets</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\Data\level0.resS">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\Data\level0.resS">
       <PackagePath>Data\level0.resS</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\Data\sharedassets0.assets.resS">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\Data\sharedassets0.assets.resS">
       <PackagePath>Data\sharedassets0.assets.resS</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\Data\managedAssemblies.txt">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\Data\managedAssemblies.txt">
       <PackagePath>Data\managedAssemblies.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\Data\nativePlugins.txt">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\Data\nativePlugins.txt">
       <PackagePath>Data\nativePlugins.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\Data\StreamingAssets\Vuforia\VuforiaMars_Images.dat">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\Data\StreamingAssets\Vuforia\VuforiaMars_Images.dat">
       <PackagePath>Data\StreamingAssets\Vuforia\VuforiaMars_Images.dat</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\Data\StreamingAssets\Vuforia\VuforiaMars_Object_OT.dat">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\Data\StreamingAssets\Vuforia\VuforiaMars_Object_OT.dat">
       <PackagePath>Data\StreamingAssets\Vuforia\VuforiaMars_Object_OT.dat</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\Data\StreamingAssets\Vuforia\VuforiaMars_VuMark.dat">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\Data\StreamingAssets\Vuforia\VuforiaMars_VuMark.dat">
       <PackagePath>Data\StreamingAssets\Vuforia\VuforiaMars_VuMark.dat</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\bin\x86\Release\resources.pri">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\bin\x86\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.UIElementsModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.UIElementsModule.dll">
       <PackagePath>UnityEngine.UIElementsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.UnityAnalyticsModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.UnityAnalyticsModule.dll">
       <PackagePath>UnityEngine.UnityAnalyticsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.UNETModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.UNETModule.dll">
       <PackagePath>UnityEngine.UNETModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.UIModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.UIModule.dll">
       <PackagePath>UnityEngine.UIModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.TilemapModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.TilemapModule.dll">
       <PackagePath>UnityEngine.TilemapModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.StyleSheetsModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.StyleSheetsModule.dll">
       <PackagePath>UnityEngine.StyleSheetsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.SpriteMaskModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.SpriteMaskModule.dll">
       <PackagePath>UnityEngine.SpriteMaskModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.ScreenCaptureModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.ScreenCaptureModule.dll">
       <PackagePath>UnityEngine.ScreenCaptureModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.TextRenderingModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.TextRenderingModule.dll">
       <PackagePath>UnityEngine.TextRenderingModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.TerrainPhysicsModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.TerrainPhysicsModule.dll">
       <PackagePath>UnityEngine.TerrainPhysicsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.TerrainModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.TerrainModule.dll">
       <PackagePath>UnityEngine.TerrainModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.WindModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.WindModule.dll">
       <PackagePath>UnityEngine.WindModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.WebModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.WebModule.dll">
       <PackagePath>UnityEngine.WebModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.VRModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.VRModule.dll">
       <PackagePath>UnityEngine.VRModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.VideoModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.VideoModule.dll">
       <PackagePath>UnityEngine.VideoModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.UnityWebRequestModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.UnityWebRequestModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.UnityWebRequestAudioModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.UnityWebRequestAudioModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestAudioModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.UnityConnectModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.UnityConnectModule.dll">
       <PackagePath>UnityEngine.UnityConnectModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.VehiclesModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.VehiclesModule.dll">
       <PackagePath>UnityEngine.VehiclesModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.UnityWebRequestWWWModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.UnityWebRequestWWWModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestWWWModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.UnityWebRequestTextureModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.UnityWebRequestTextureModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestTextureModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.CoreModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.CoreModule.dll">
       <PackagePath>UnityEngine.CoreModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.ClothModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.ClothModule.dll">
       <PackagePath>UnityEngine.ClothModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.AudioModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.AudioModule.dll">
       <PackagePath>UnityEngine.AudioModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.dll">
       <PackagePath>UnityEngine.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.DirectorModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.DirectorModule.dll">
       <PackagePath>UnityEngine.DirectorModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.CrashReportingModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.CrashReportingModule.dll">
       <PackagePath>UnityEngine.CrashReportingModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.ARModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.ARModule.dll">
       <PackagePath>UnityEngine.ARModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.AccessibilityModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.AccessibilityModule.dll">
       <PackagePath>UnityEngine.AccessibilityModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.AnimationModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.AnimationModule.dll">
       <PackagePath>UnityEngine.AnimationModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.AIModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.AIModule.dll">
       <PackagePath>UnityEngine.AIModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.ParticleSystemModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.ParticleSystemModule.dll">
       <PackagePath>UnityEngine.ParticleSystemModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.ParticlesLegacyModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.ParticlesLegacyModule.dll">
       <PackagePath>UnityEngine.ParticlesLegacyModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.PhysicsModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.PhysicsModule.dll">
       <PackagePath>UnityEngine.PhysicsModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.Physics2DModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.Physics2DModule.dll">
       <PackagePath>UnityEngine.Physics2DModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.PerformanceReportingModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.PerformanceReportingModule.dll">
       <PackagePath>UnityEngine.PerformanceReportingModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.JSONSerializeModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.JSONSerializeModule.dll">
       <PackagePath>UnityEngine.JSONSerializeModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.GridModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.GridModule.dll">
       <PackagePath>UnityEngine.GridModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.GameCenterModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.GameCenterModule.dll">
       <PackagePath>UnityEngine.GameCenterModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.InputModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.InputModule.dll">
       <PackagePath>UnityEngine.InputModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.IMGUIModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.IMGUIModule.dll">
       <PackagePath>UnityEngine.IMGUIModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.ImageConversionModule.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.ImageConversionModule.dll">
       <PackagePath>UnityEngine.ImageConversionModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.Timeline.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.Timeline.dll">
       <PackagePath>UnityEngine.Timeline.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\nunit.framework.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\nunit.framework.dll">
       <PackagePath>nunit.framework.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.UI.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.UI.dll">
       <PackagePath>UnityEngine.UI.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.Analytics.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.Analytics.dll">
       <PackagePath>UnityEngine.Analytics.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.HoloLens.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.HoloLens.dll">
       <PackagePath>UnityEngine.HoloLens.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\Vuforia.UnityExtensions.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\Vuforia.UnityExtensions.dll">
       <PackagePath>Vuforia.UnityExtensions.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UWPNetworking.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UWPNetworking.dll">
       <PackagePath>UWPNetworking.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.Networking.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UnityEngine.Networking.dll">
       <PackagePath>UnityEngine.Networking.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\Assembly-CSharp.dll">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\Assembly-CSharp.dll">
       <PackagePath>Assembly-CSharp.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\UdpConnectionNew\bin\x86\Release\Core\UdpConnectionNew.exe">
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\bin\x86\Release\Core\UdpConnectionNew.exe">
       <PackagePath>UdpConnectionNew.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
