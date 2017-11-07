@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<EmBitz_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="Drivers\CMSIS\Device\ST\STM32F0xx\Include\stm32f030x6.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6470" topLine="106" />
+		</Cursor>
+	</File>
+	<File name="Drivers\CMSIS\Device\ST\STM32F0xx\Include\stm32f0xx.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3711" topLine="84" />
+		</Cursor>
+	</File>
+	<File name="Drivers\CMSIS\Device\ST\STM32F0xx\Include\system_stm32f0xx.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3010" topLine="98" />
+		</Cursor>
+	</File>
+	<File name="Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4081" topLine="69" />
+		</Cursor>
+	</File>
+	<File name="Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_i2c.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5673" topLine="105" />
+		</Cursor>
+	</File>
+	<File name="Drivers\STM32F0xx_HAL_Driver\Inc\stm32f0xx_hal_uart.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="55245" topLine="1097" />
+		</Cursor>
+	</File>
+	<File name="Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_hal.c" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="11725" topLine="250" />
+		</Cursor>
+	</File>
+	<File name="Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_hal_gpio.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="17792" topLine="400" />
+		</Cursor>
+	</File>
+	<File name="Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_hal_i2c.c" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="122642" topLine="3954" />
+		</Cursor>
+	</File>
+	<File name="Drivers\STM32F0xx_HAL_Driver\Src\stm32f0xx_hal_rcc.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4513" topLine="63" />
+		</Cursor>
+	</File>
+	<File name="src\main.c" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="13081" topLine="348" />
+		</Cursor>
+	</File>
+	<File name="src\startup_stm32f030x6.s" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3181" topLine="30" />
+		</Cursor>
+	</File>
+	<File name="src\stm32f0xx_it.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="35" />
+		</Cursor>
+	</File>
+</EmBitz_layout_file>
