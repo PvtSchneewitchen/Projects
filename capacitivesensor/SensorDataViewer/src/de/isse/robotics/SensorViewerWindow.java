@@ -7,7 +7,6 @@ import java.awt.Graphics;
 import java.awt.GridLayout;
 import java.awt.image.BufferedImage;
 import java.util.stream.DoubleStream;
-
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -25,11 +24,11 @@ public class SensorViewerWindow extends JFrame {
 	private double[] basis;
 	private double scale = 0.1;
 	private double[] value;
-	private double[] mean;
+	public double[] mean;
 	private final int HISTSIZE = 14;
 	private int histpos = 0;
 	private double[][] history = new double[HISTSIZE][];
-
+	
 	public SensorViewerWindow(SensorModel model) {
 		super("ISSE Capacitive Sensor Data Viewer");
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -182,5 +181,5 @@ public class SensorViewerWindow extends JFrame {
 		histpos = 0;
 		scale = 0.15;
 	}
-
+	
 }
