@@ -90,6 +90,7 @@ public class ViconAccess {
 
 	private Object[] writeTransformations(Transformation t1, Transformation t2, double[] capacities, double distance) {
 		int capacityInsert = 13;
+		
 		Object[] obj = new Object[capacityInsert + capacities.length];
 		obj[0] = t1.getX();
 		obj[1] = t1.getY();
