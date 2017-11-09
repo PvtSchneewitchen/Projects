@@ -27,7 +27,9 @@ public class SensorViewer {
 		while(true) {
 			viconClass.processCapacityWithVicon(svwInstance.getMean());
 			viconClass.computeCapacitiesMean(svwInstance.getMean());
-			hl.sendDataToHololens(serverSocket, viconClass.getDistance(), svwInstance.getMean());
+			hl.sendCapacity1ToHololens(serverSocket, svwInstance.getMean()[0]);
+			hl.sendCapacity2ToHololens(serverSocket, svwInstance.getMean()[1]);
+			hl.sendDistanceToHololens(serverSocket, viconClass.getDistance());
 		}
 	}
 	}
