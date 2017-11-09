@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 import org.roboticsapi.core.world.Transformation;
 import org.roboticsapi.device.vicon.tracker.javarcc.devices.JMulticastVicon;
 import org.roboticsapi.device.vicon.tracker.javarcc.devices.JVicon;
@@ -24,9 +27,19 @@ public class Test {
 		vicon.start();
 
 		Thread.sleep(2000);
+
 		System.out.println("The following subjects exist: ");
 		for (String name : vicon.getSubjectNames())
 			System.out.println(name);
+		
+		List l = new ArrayList(100);
+		l.add(1);
+		l.add(2);
+		l.add(3);
+		l.remove(0);
+		System.out.println(l);
+		System.out.println(l.size());
+		
 
 		Subject kugel = vicon.getSubject("Kugel");
 		Subject sensorBoard = vicon.getSubject("Sensorboard");

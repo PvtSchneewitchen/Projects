@@ -10,13 +10,13 @@ public class SensorViewer {
 		//new SensorViewerWindow(model).setVisible(true);
 		SensorViewerWindow svwInstance = new SensorViewerWindow(model);
 		svwInstance.setVisible(true);
-		
-		
+
 		ViconAccess viconClass = new ViconAccess();
 		viconClass.startVicon();
 		viconClass.startLogger();
 		while(true) {
-			viconClass.processCapacityWithVicon(svwInstance.mean);
+			viconClass.processCapacityWithVicon(svwInstance.getMean());
+			viconClass.computeCapacitiesMean(svwInstance.getMean());
 		}
 	}
 

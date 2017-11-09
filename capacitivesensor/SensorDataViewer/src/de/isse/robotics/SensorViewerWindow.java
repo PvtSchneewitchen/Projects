@@ -24,7 +24,7 @@ public class SensorViewerWindow extends JFrame {
 	private double[] basis;
 	private double scale = 0.1;
 	private double[] value;
-	public double[] mean;
+	private double[] mean;
 	private final int HISTSIZE = 14;
 	private int histpos = 0;
 	private double[][] history = new double[HISTSIZE][];
@@ -69,6 +69,10 @@ public class SensorViewerWindow extends JFrame {
 			if (mean.length > 0 && Double.isFinite(mean[0]))
 				((Timer) ae.getSource()).stop();
 		}).start();
+	}
+	
+	public double[] getMean() {
+		return mean;
 	}
 
 	private void createLayout(int rows) {
