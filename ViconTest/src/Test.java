@@ -1,3 +1,8 @@
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,13 +37,12 @@ public class Test {
 		for (String name : vicon.getSubjectNames())
 			System.out.println(name);
 		
-		List l = new ArrayList(100);
-		l.add(1);
-		l.add(2);
-		l.add(3);
-		l.remove(0);
-		System.out.println(l);
-		System.out.println(l.size());
+		byte[] b = new byte[2];
+		double d1 = 2.111;
+		double d2 = 1.222;
+		b[0] = (byte) d1;
+		b[1] = (byte) d2;
+		System.out.println(b);
 		
 
 		Subject kugel = vicon.getSubject("Kugel");
@@ -49,5 +53,26 @@ public class Test {
 		System.out.println(transformationsensorBoard);
 		
 		vicon.destroy();
+	}
+	public static Object deserializeBytes(byte[] bytes) throws IOException, ClassNotFoundException
+	{
+	    ByteArrayInputStream bytesIn = new ByteArrayInputStream(bytes);
+	    ObjectInputStream ois = new ObjectInputStream(bytesIn);
+	    Object obj = ois.readObject();
+	    ois.close();
+	    return obj;
+	}
+
+
+	public static byte[] serializeObject(Object obj) throws IOException
+	{
+	    ByteArrayOutputStream bytesOut = new ByteArrayOutputStream();
+	    ObjectOutputStream oos = new ObjectOutputStream(bytesOut);
+	    oos.writeObject(obj);
+	    oos.flush();
+	    byte[] bytes = bytesOut.toByteArray();
+	    bytesOut.close();
+	    oos.close();
+	    return bytes;
 	}
 }

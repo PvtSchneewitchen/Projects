@@ -47,12 +47,15 @@ public class ViconAccess {
 	private boolean initialReferenceLogEnd = false;
 	private double[] initialCapacitiesMean1 = new double[10];
 	private double[] initialCapacitiesMean2 = new double[10];
+	private static double distance = 0;
 	private double[] initialCapacities = new double[2];
 	private double[] capacitiesMean = new double[2];
  	private ArrayList<Double> capacities1Mean = new ArrayList<Double>();
  	private ArrayList<Double> capacities2Mean = new ArrayList<Double>();
 
-
+ 	public double getDistance(){
+		return distance;
+	}
 	
 	public void startVicon() throws Exception{
 		System.out.println("Starting Vicon");
@@ -89,7 +92,7 @@ public class ViconAccess {
 			Subject sensorBoard = vicon.getSubject("Sensorboard");
 			Transformation transformationKugel = RPICalc.rpiToFrame(kugel.pos);
 			Transformation transformationSensorBoard = RPICalc.rpiToFrame(sensorBoard.pos);
-			double distance = Math.sqrt(Math.pow((transformationKugel.getX()-transformationSensorBoard.getX()), 2)+
+			distance = Math.sqrt(Math.pow((transformationKugel.getX()-transformationSensorBoard.getX()), 2)+
 					Math.pow((transformationKugel.getY()-transformationSensorBoard.getY()), 2)+
 					Math.pow((transformationKugel.getZ()-transformationSensorBoard.getZ()), 2));
 
