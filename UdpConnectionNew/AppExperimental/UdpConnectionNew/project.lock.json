@@ -15814,8 +15814,8 @@
     },
     "Assembly-CSharp/1.0.0": {
       "type": "project",
-      "path": "../../../../../UdpConnectionNew/AppExperimental/GeneratedProjects/UWP/Assembly-CSharp/project.json",
-      "msbuildProject": "../../../../../UdpConnectionNew/AppExperimental/GeneratedProjects/UWP/Assembly-CSharp/Assembly-CSharp.csproj"
+      "path": "../GeneratedProjects/UWP/Assembly-CSharp/project.json",
+      "msbuildProject": "../GeneratedProjects/UWP/Assembly-CSharp/Assembly-CSharp.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -15832,12 +15832,12 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\gruenepa\\Documents\\GithubRepos\\Projects\\UdpConnectionNew\\AppExperimental\\UdpConnectionNew\\UdpConnectionNew.csproj",
+      "projectUniqueName": "C:\\Users\\gruenepa\\Documents\\GithubRepos\\Projects\\UdpConnectionNew\\Appexperimental\\UdpConnectionNew\\UdpConnectionNew.csproj",
       "projectName": "UdpConnectionNew",
-      "projectPath": "C:\\Users\\gruenepa\\Documents\\GithubRepos\\Projects\\UdpConnectionNew\\AppExperimental\\UdpConnectionNew\\UdpConnectionNew.csproj",
-      "projectJsonPath": "C:\\Users\\gruenepa\\Documents\\GithubRepos\\Projects\\UdpConnectionNew\\AppExperimental\\UdpConnectionNew\\project.json",
+      "projectPath": "C:\\Users\\gruenepa\\Documents\\GithubRepos\\Projects\\UdpConnectionNew\\Appexperimental\\UdpConnectionNew\\UdpConnectionNew.csproj",
+      "projectJsonPath": "C:\\Users\\gruenepa\\Documents\\GithubRepos\\Projects\\UdpConnectionNew\\Appexperimental\\UdpConnectionNew\\project.json",
       "packagesPath": "C:\\Users\\gruenepa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gruenepa\\Documents\\GithubRepos\\Projects\\UdpConnectionNew\\AppExperimental\\UdpConnectionNew\\obj\\",
+      "outputPath": "C:\\Users\\gruenepa\\Documents\\GithubRepos\\Projects\\UdpConnectionNew\\Appexperimental\\UdpConnectionNew\\obj\\",
       "projectStyle": "ProjectJson",
       "configFilePaths": [
         "C:\\Users\\gruenepa\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -15850,8 +15850,8 @@
       "frameworks": {
         "uap10.0.10240": {
           "projectReferences": {
-            "C:\\Users\\gruenepa\\Documents\\UdpConnectionNew\\AppExperimental\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj": {
-              "projectPath": "C:\\Users\\gruenepa\\Documents\\UdpConnectionNew\\AppExperimental\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj"
+            "C:\\Users\\gruenepa\\Documents\\GithubRepos\\Projects\\UdpConnectionNew\\Appexperimental\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj": {
+              "projectPath": "C:\\Users\\gruenepa\\Documents\\GithubRepos\\Projects\\UdpConnectionNew\\Appexperimental\\GeneratedProjects\\UWP\\Assembly-CSharp\\Assembly-CSharp.csproj"
             }
           }
         }

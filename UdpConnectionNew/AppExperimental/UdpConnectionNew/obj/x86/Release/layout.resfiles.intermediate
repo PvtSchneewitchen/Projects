@@ -17,6 +17,10 @@ Data\Resources\unity default resources
 Data\Resources\unity_builtin_extra
 Data\sharedassets0.assets
 Data\sharedassets0.assets.resS
+Data\StreamingAssets\Vuforia\SensorModelAndImage.dat
+Data\StreamingAssets\Vuforia\SensorModelAndImage.xml
+Data\StreamingAssets\Vuforia\SensorModelAndImage_OT.dat
+Data\StreamingAssets\Vuforia\SensorModelAndImage_OT.xml
 Data\StreamingAssets\Vuforia\VuforiaMars_Images.dat
 Data\StreamingAssets\Vuforia\VuforiaMars_Images.xml
 Data\StreamingAssets\Vuforia\VuforiaMars_Object_OT.dat

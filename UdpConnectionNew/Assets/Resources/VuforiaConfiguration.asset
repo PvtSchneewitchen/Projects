@@ -44,10 +44,14 @@ MonoBehaviour:
       ContainsMagnet: 0
   databaseLoad:
     dataSetsToLoad:
+    - SensorModelAndImage_OT
+    - SensorModelAndImage
     - VuforiaMars_Images
     - VuforiaMars_Object_OT
     - VuforiaMars_VuMark
     dataSetsToActivate:
+    - SensorModelAndImage_OT
+    - SensorModelAndImage
     - VuforiaMars_Images
     - VuforiaMars_Object_OT
     - VuforiaMars_VuMark

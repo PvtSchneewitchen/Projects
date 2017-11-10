@@ -10,7 +10,7 @@ GeneratedProjects\UWP\Assembly-CSharp\project.json: 4FCF72A4D5EDB37E24C206A7BCFE
 UdpConnectionNew\App.cs: B8D3732003F1206B8BD2C0C41B7268BF
 UdpConnectionNew\Package.appxmanifest: 1E96B84C25ED5AA870E47697C3762D86
 UdpConnectionNew\project.json: 1D02BC64BAC0D041019673A1C4C51737
-UdpConnectionNew\UdpConnectionNew.csproj: 6830265EB74975AD9369CA59D736682C
+UdpConnectionNew\UdpConnectionNew.csproj: 7B474DD4A54C8F06A354125EC95E164D
 UdpConnectionNew\UdpConnectionNew.csproj.user: modified
 UdpConnectionNew\Assets\SplashScreen.scale-200.png: 60618416282ED104FD1473935716045D
 UdpConnectionNew\Assets\Square150x150Logo.scale-200.png: E02834B4A5DFB97FF8E212C1CACBB084

@@ -403,6 +403,21 @@
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\Data\StreamingAssets\Vuforia\VuforiaMars_Images.xml">
+      <PackagePath>Data\StreamingAssets\Vuforia\VuforiaMars_Images.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\Data\StreamingAssets\Vuforia\VuforiaMars_Object_OT.xml">
+      <PackagePath>Data\StreamingAssets\Vuforia\VuforiaMars_Object_OT.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\Data\StreamingAssets\Vuforia\VuforiaMars_VuMark.xml">
+      <PackagePath>Data\StreamingAssets\Vuforia\VuforiaMars_VuMark.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\VuforiaWrapper.dll">
+      <PackagePath>VuforiaWrapper.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\Vuforia.dll">
+      <PackagePath>Vuforia.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\Data\boot.config">
       <PackagePath>Data\boot.config</PackagePath>
     </AppxPackagedFile>
@@ -421,14 +436,32 @@
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\Data\globalgamemanagers.assets">
       <PackagePath>Data\globalgamemanagers.assets</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\Data\resources.assets">
+      <PackagePath>Data\resources.assets</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\Data\sharedassets0.assets">
       <PackagePath>Data\sharedassets0.assets</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\Data\level0.resS">
       <PackagePath>Data\level0.resS</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\Data\sharedassets0.assets.resS">
+      <PackagePath>Data\sharedassets0.assets.resS</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\Data\managedAssemblies.txt">
       <PackagePath>Data\managedAssemblies.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\Data\nativePlugins.txt">
+      <PackagePath>Data\nativePlugins.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\Data\StreamingAssets\Vuforia\VuforiaMars_Images.dat">
+      <PackagePath>Data\StreamingAssets\Vuforia\VuforiaMars_Images.dat</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\Data\StreamingAssets\Vuforia\VuforiaMars_Object_OT.dat">
+      <PackagePath>Data\StreamingAssets\Vuforia\VuforiaMars_Object_OT.dat</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\Data\StreamingAssets\Vuforia\VuforiaMars_VuMark.dat">
+      <PackagePath>Data\StreamingAssets\Vuforia\VuforiaMars_VuMark.dat</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.16299.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -440,8 +473,11 @@
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.TilemapModule.dll">
-      <PackagePath>UnityEngine.TilemapModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.UIElementsModule.dll">
+      <PackagePath>UnityEngine.UIElementsModule.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.UnityAnalyticsModule.dll">
+      <PackagePath>UnityEngine.UnityAnalyticsModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.UNETModule.dll">
       <PackagePath>UnityEngine.UNETModule.dll</PackagePath>
@@ -449,8 +485,8 @@
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.UIModule.dll">
       <PackagePath>UnityEngine.UIModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.UIElementsModule.dll">
-      <PackagePath>UnityEngine.UIElementsModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.TilemapModule.dll">
+      <PackagePath>UnityEngine.TilemapModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.StyleSheetsModule.dll">
       <PackagePath>UnityEngine.StyleSheetsModule.dll</PackagePath>
@@ -470,8 +506,8 @@
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.TerrainModule.dll">
       <PackagePath>UnityEngine.TerrainModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.UnityAnalyticsModule.dll">
-      <PackagePath>UnityEngine.UnityAnalyticsModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.WindModule.dll">
+      <PackagePath>UnityEngine.WindModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.WebModule.dll">
       <PackagePath>UnityEngine.WebModule.dll</PackagePath>
@@ -481,9 +517,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.VideoModule.dll">
       <PackagePath>UnityEngine.VideoModule.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.WindModule.dll">
-      <PackagePath>UnityEngine.WindModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.UnityWebRequestModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestModule.dll</PackagePath>
@@ -503,8 +536,8 @@
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.UnityWebRequestTextureModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestTextureModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.PhysicsModule.dll">
-      <PackagePath>UnityEngine.PhysicsModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.CoreModule.dll">
+      <PackagePath>UnityEngine.CoreModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.ClothModule.dll">
       <PackagePath>UnityEngine.ClothModule.dll</PackagePath>
@@ -512,8 +545,8 @@
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.AudioModule.dll">
       <PackagePath>UnityEngine.AudioModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.ARModule.dll">
-      <PackagePath>UnityEngine.ARModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.dll">
+      <PackagePath>UnityEngine.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.DirectorModule.dll">
       <PackagePath>UnityEngine.DirectorModule.dll</PackagePath>
@@ -521,8 +554,8 @@
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.CrashReportingModule.dll">
       <PackagePath>UnityEngine.CrashReportingModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.CoreModule.dll">
-      <PackagePath>UnityEngine.CoreModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.ARModule.dll">
+      <PackagePath>UnityEngine.ARModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.AccessibilityModule.dll">
       <PackagePath>UnityEngine.AccessibilityModule.dll</PackagePath>
@@ -533,14 +566,14 @@
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.AIModule.dll">
       <PackagePath>UnityEngine.AIModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.dll">
-      <PackagePath>UnityEngine.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.ParticleSystemModule.dll">
+      <PackagePath>UnityEngine.ParticleSystemModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.ParticlesLegacyModule.dll">
       <PackagePath>UnityEngine.ParticlesLegacyModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.JSONSerializeModule.dll">
-      <PackagePath>UnityEngine.JSONSerializeModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.PhysicsModule.dll">
+      <PackagePath>UnityEngine.PhysicsModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.Physics2DModule.dll">
       <PackagePath>UnityEngine.Physics2DModule.dll</PackagePath>
@@ -548,8 +581,8 @@
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.PerformanceReportingModule.dll">
       <PackagePath>UnityEngine.PerformanceReportingModule.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.ParticleSystemModule.dll">
-      <PackagePath>UnityEngine.ParticleSystemModule.dll</PackagePath>
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.JSONSerializeModule.dll">
+      <PackagePath>UnityEngine.JSONSerializeModule.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.GridModule.dll">
       <PackagePath>UnityEngine.GridModule.dll</PackagePath>
@@ -580,6 +613,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UnityEngine.HoloLens.dll">
       <PackagePath>UnityEngine.HoloLens.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\Vuforia.UnityExtensions.dll">
+      <PackagePath>Vuforia.UnityExtensions.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\UWPNetworking.dll">
       <PackagePath>UWPNetworking.dll</PackagePath>

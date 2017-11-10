@@ -1,2 +1,2 @@
-C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UdpConnectionNew.csproj;x86
-C:\Users\gruenepa\Documents\UdpConnectionNew\AppExperimental\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;x86
+C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;x86
+C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UdpConnectionNew.csproj;x86

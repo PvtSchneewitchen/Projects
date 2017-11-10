@@ -294,3 +294,5 @@ C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\obj\x86\Debug\
 C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\bin\x86\Debug\Vuforia.UnityExtensions.dll
+C:\Users\gruenepa\Documents\UdpConnectionNew\App\UdpConnectionNew\bin\x86\Debug\Vuforia.UnityExtensions.pdb

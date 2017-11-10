@@ -342,7 +342,7 @@
 
   <ItemGroup>
     <ProjectReference Include="C:\Users\gruenepa\Documents\UdpConnectionNew\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj">
-      <Project>{e0810807-584b-437a-9dab-4b1e01170aa6}</Project>
+      <Project>{4a7858b9-a361-4e1f-a3d0-edeaa864190f}</Project>
       <Name>Assembly-CSharp</Name>
       <Private>False</Private>
     </ProjectReference>

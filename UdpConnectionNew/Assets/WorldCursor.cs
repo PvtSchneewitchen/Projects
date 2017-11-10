@@ -1,4 +1,4 @@
-﻿using Unity.Partial.System;
+﻿//using Unity.Partial.System;
 using UnityEngine;
 using UnityEngine.XR.WSA;
 using Type = System.Type;
@@ -37,9 +37,9 @@ public class WorldCursor : MonoBehaviour
 
         if (Physics.Raycast(headPosition, gazeDirection, out hitInfo))
         {
-            Debug.Log("Type " + hitInfo.collider.GetType());
+            /*Debug.Log("Type " + hitInfo.collider.GetType());
             Debug.Log("Type " + Object3D);
-            Debug.Log("Type " + SpatialMap);
+            Debug.Log("Type " + SpatialMap);*/
             if (hitInfo.collider.GetType() == typeof(SphereCollider))
             {
                 CursorMeshObjectHit.enabled = true;
