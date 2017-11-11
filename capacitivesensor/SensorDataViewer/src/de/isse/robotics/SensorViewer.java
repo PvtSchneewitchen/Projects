@@ -24,8 +24,8 @@ public class SensorViewer {
 			hlc.Connect(port);
 		
 		long startTime = System.currentTimeMillis();
-		double d1 = 0.3;
-		double d2 = 0.5;
+		double d1 = 0.6;
+		double d2 = 0.8;
 		double d3 = 1.0;
 		double incrementFactor = 0.01;
 		int counter = 0;
@@ -39,13 +39,13 @@ public class SensorViewer {
 			
 			d1 -= incrementFactor;
 			if(d1 <= 0){
-				d1 = 0.3;
+				d1 = 0.6;
 				counter++;
 				
 			}
 			d2 -= incrementFactor;
 			if(d2 <= 0)
-				d2 = 0.5;
+				d2 = 0.8;
 			d3 -= incrementFactor;
 			if(d3 <= 0){
 				d3 = 1.0;
