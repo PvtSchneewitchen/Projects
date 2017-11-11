@@ -342,7 +342,7 @@
 
   <ItemGroup>
     <ProjectReference Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj">
-      <Project>{7d2fd92f-1338-481a-96ef-9f7deaba68d9}</Project>
+      <Project>{1ff06bff-6c15-4baf-ad92-1abb34a22170}</Project>
       <Name>Assembly-CSharp</Name>
       <Private>False</Private>
     </ProjectReference>
