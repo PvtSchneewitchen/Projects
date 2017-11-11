@@ -88,55 +88,39 @@ public class DataReceiver : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        while (ExecuteOnMainThread.Count > 0)
-        {
-            SendMessage(" mainthread trigger from " + socket.Information.LocalAddress.ToString());
-        }
+        SendMessage("Request from " + socket.Information.LocalAddress.ToString());
     }
 
 #if !UNITY_EDITOR
     private async void Socket_MessageReceived(Windows.Networking.Sockets.DatagramSocket sender,
         Windows.Networking.Sockets.DatagramSocketMessageReceivedEventArgs args)
     {
-        
-        Debug.Log("GOT MESSAGE: " + "bufferl " + args.GetDataReader().UnconsumedBufferLength);
-        //Read the message that was received from the UDP echo client.
+        uint doublesToRead = args.GetDataReader().UnconsumedBufferLength/8;
+        double distance = 99;
+        double capacity1 = 99;
+        double capacity2 = 99;
+        IInputStream inputStream = args.GetDataStream();
+        DataReader dataReader = new DataReader(inputStream);
 
-        DataReader dr = args.GetDataReader();
-        dr.ByteOrder = ByteOrder.LittleEndian;
-        IBuffer buffer = dr.ReadBuffer(args.GetDataReader().UnconsumedBufferLength);
-        
-        double d1 = DataReader.FromBuffer(buffer).ReadDouble();
-        double d2 = DataReader.FromBuffer(buffer).ReadDouble();
-        
-        byte[] bytes = new byte[16];
-        bytes = buffer.ToArray(0, 16);
-
-        Debug.Log("1: " + bytes[0]);
-        Debug.Log("2: " + bytes[1]);
-        Debug.Log("3: " + bytes[2]);
-        Debug.Log("4: " + bytes[3]);
-        Debug.Log("5: " + bytes[4]);
-        Debug.Log("6: " + bytes[5]);
-        Debug.Log("7: " + bytes[6]);
-        Debug.Log("8: " + bytes[7]);
-
-        double d3 = BitConverter.ToDouble(bytes, 0);
-        double d4 = BitConverter.ToDouble(bytes, 8);
-
-        //Debug.Log("Distance: " + d1);
-        //Debug.Log("cap: " + d2);
-        /*Debug.Log("Distance2: " + d3);
-        Debug.Log("cap2: " + d4);*/
-
-        if (ExecuteOnMainThread.Count == 0)
+        uint chunkSize = await dataReader.LoadAsync(args.GetDataReader().UnconsumedBufferLength);
+        while (doublesToRead > 0)
         {
-            ExecuteOnMainThread.Enqueue(() =>
-            {
-                Debug.Log("ExecuteOnMainThread");
-                //Thermostat.Temperature = float.Parse(message);
-            });
+            double actualDouble = dataReader.ReadDouble();
+            if (doublesToRead == 1)
+                capacity2 = actualDouble;
+            else if (doublesToRead == 2)
+                capacity1 = actualDouble;
+            else if (doublesToRead == 3)
+                distance = actualDouble;
+            doublesToRead--; 
         }
+        UpdateElectricField(distance, capacity1, capacity2);
     }
 #endif
+    private static void UpdateElectricField(double distance, double capacity1, double capacity2)
+    {
+        Debug.Log("d: " + distance);
+        Debug.Log("c1: " + capacity1);
+        Debug.Log("c2: " + capacity2);
+    }
 }
