@@ -86,7 +86,8 @@ public class ViconAccess {
 		} 
 	}
 
-	public void processCapacityWithVicon(double[] capacities) throws Exception{
+	public double processCapacityWithVicon(double[] capacities) throws Exception{
+		
 		try {
 			Subject kugel = vicon.getSubject("Kugel");
 			Subject sensorBoard = vicon.getSubject("Sensorboard");
@@ -136,6 +137,7 @@ public class ViconAccess {
 				startTimeCatchNullPointerExc = actualTime;
 			}
 		}
+		return distance;
 	}
 
 	private void logDependingOnDistance(Transformation kugel, Transformation sensorBoard, double[] capacities, double distance) {
@@ -199,7 +201,7 @@ public class ViconAccess {
 		}
 	}
 
-	void computeCapacitiesMean(double[] capacities){
+	public void computeCapacitiesMean(double[] capacities){
 		double sum1 = 0;
 		double sum2 = 0;
 		capacities1Mean.add(capacities[0]);

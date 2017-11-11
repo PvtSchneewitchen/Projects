@@ -4,63 +4,52 @@ import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
 import java.util.ArrayList;
 
 public class HololensConnection{
-	private int messageIdDistance = 1;
-	private int messageIdCapacity1 = 2;
-	private int messageIdCapacity2 = 3;
 	
-	public boolean Connect(DatagramSocket receiveSocket) throws IOException{
-		byte[] receiveData = new byte[32];
-		DatagramPacket receivePacket = new DatagramPacket(receiveData, receiveData.length);
-		receiveSocket.receive(receivePacket);
-		String receivedData = new String(receivePacket.getData());
-		System.out.println("ANSWERMESSAGE: " + receivedData);
-		return true;
+	static DatagramSocket serverSocket;
+	static DatagramPacket message;
+	DatagramPacket rMessage = new DatagramPacket(new byte[32], 32);
+	
+	public void Connect(int port){
+		try
+        {
+			serverSocket = new DatagramSocket(port);
+        }
+        catch( Exception ex )
+        {
+            System.out.println("Problem creating socket on port: " + port);
+        }
 	}
 	
-	public void sendDistanceToHololens(DatagramSocket sendSocket, double distance) throws IOException {
-		byte[] distanceMessage = new byte[9];
-		byte[] distanceInBytes = new byte[8];
-		distanceInBytes = toByteArray(distance).clone();
-		distanceMessage[0] = (byte) messageIdDistance;
-		for(int i=1;distanceInBytes.length>i;i++) {
-			distanceMessage[i] = distanceInBytes[i-1];
-		}
-		DatagramPacket message = new DatagramPacket(distanceMessage, distanceMessage.length);
-		sendSocket.send(message);
+	public DatagramPacket WaitForRequestMessage() throws IOException{
+		System.out.println("Sensorviewer is wating for request message");
+		serverSocket.receive(rMessage);
+		String message = new String(rMessage.getData(), 0, rMessage.getLength());
+		
+		System.out.println("Request received from: " + rMessage.getAddress () + " : " + rMessage.getPort ());
+		System.out.println("Request Message: " + new String(message));
+		
+		return rMessage;
 	}
 	
-	public void sendCapacity1ToHololens(DatagramSocket sendSocket, double capacity1) throws IOException {
-		byte[] capacity1Message = new byte[9];
-		byte[] capacity1InBytes = new byte[8];
-		capacity1InBytes = toByteArray(capacity1).clone();
-		capacity1Message[0] = (byte) messageIdCapacity1;
-		for(int i=1;capacity1InBytes.length>i;i++) {
-			capacity1Message[i] = capacity1InBytes[i-1];
-		}
-		DatagramPacket message = new DatagramPacket(capacity1Message, capacity1Message.length);
-		sendSocket.send(message);
-	}
-	
-	public void sendCapacity2ToHololens(DatagramSocket sendSocket, double capacity2) throws IOException {
-		byte[] capacity2Message = new byte[9];
-		byte[] capacity2InBytes = new byte[8];
-		capacity2InBytes = toByteArray(capacity2).clone();
-		capacity2Message[0] = (byte) messageIdCapacity2;
-		for(int i=1;capacity2InBytes.length>i;i++) {
-			capacity2Message[i] = capacity2InBytes[i-1];
-		}
-		DatagramPacket message = new DatagramPacket(capacity2Message, capacity2Message.length);
-		sendSocket.send(message);
-	}
-	
-	public static byte[] toByteArray(double value) {
-	    byte[] bytes = new byte[8];
-	    ByteBuffer.wrap(bytes).putDouble(value);
-	    return bytes;
+	@SuppressWarnings("static-access")
+	public void SendDataToHololens(double distance, double capacity1, double capcity2, DatagramPacket requestMessage) throws IOException{
+		byte[] dataBytes = new byte[24];
+		ByteBuffer bf = ByteBuffer.allocate(dataBytes.length);
+		bf.order(ByteOrder.LITTLE_ENDIAN).wrap(dataBytes).putDouble(0, distance);
+		bf.order(ByteOrder.LITTLE_ENDIAN).wrap(dataBytes).putDouble(8, capacity1);
+		bf.order(ByteOrder.LITTLE_ENDIAN).wrap(dataBytes).putDouble(16, capcity2);
+		
+		DatagramPacket dataMessage = new DatagramPacket(dataBytes, dataBytes.length, requestMessage.getAddress() ,requestMessage.getPort());
+		
+		serverSocket.send(dataMessage);
+		System.out.println("Data message sent");
 	}
 	
 }

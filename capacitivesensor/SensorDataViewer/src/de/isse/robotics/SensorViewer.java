@@ -1,36 +1,60 @@
 package de.isse.robotics;
 
-import java.net.DatagramSocket;
-import java.net.InetAddress;
+import java.net.DatagramPacket;
+import java.sql.Time;
 
 //import jssc.SerialPortException;
 
 public class SensorViewer {
-	private static String Host = "192.168.178.29";
-	private static int Port = 6;
-
-
+	private static int port = 6;
+	private static boolean sendDataToHololens = true;
+	private static DatagramPacket requestMessage;
+	
 	public static void main(String[] args) throws Exception {
-		HololensConnection hl = new HololensConnection();
-		InetAddress host = InetAddress.getByName(Host);
-		DatagramSocket serverSocket = new DatagramSocket(Port,host);
+		HololensConnection hlc = new HololensConnection();
+//		SensorModel model = new SensorModel();
+//		SensorViewerWindow svwInstance = new SensorViewerWindow(model);
+//		svwInstance.setVisible(true);
 
-		if(hl.Connect(serverSocket)) {
-			SensorModel model = new SensorModel();
-			SensorViewerWindow svwInstance = new SensorViewerWindow(model);
-			svwInstance.setVisible(true);
+//		ViconAccess viconClass = new ViconAccess();
+//		viconClass.startVicon();
+//		viconClass.startLogger();
+		
+		if(sendDataToHololens)
+			hlc.Connect(port);
+		
+		long startTime = System.currentTimeMillis();
+		double d1 = 0.3;
+		double d2 = 0.5;
+		double d3 = 1.0;
+		double incrementFactor = 0.01;
+		int counter = 0;
 
-			ViconAccess viconClass = new ViconAccess();
-			viconClass.startVicon();
-			viconClass.startLogger();
-
-			while(true) {
-				viconClass.processCapacityWithVicon(svwInstance.getMean());
-				viconClass.computeCapacitiesMean(svwInstance.getMean());
-				hl.sendCapacity1ToHololens(serverSocket, svwInstance.getMean()[0]);
-				hl.sendCapacity2ToHololens(serverSocket, svwInstance.getMean()[1]);
-				hl.sendDistanceToHololens(serverSocket, viconClass.getDistance());
+		while(true) {
+			if(sendDataToHololens)
+				requestMessage = hlc.WaitForRequestMessage();
+			
+//			double distance = viconClass.processCapacityWithVicon(svwInstance.getMean());
+//			viconClass.computeCapacitiesMean(svwInstance.getMean());//TODO call this method in new thread outside while loop
+			
+			d1 -= incrementFactor;
+			if(d1 <= 0){
+				d1 = 0.3;
+				counter++;
+				
 			}
+			d2 -= incrementFactor;
+			if(d2 <= 0)
+				d2 = 0.5;
+			d3 -= incrementFactor;
+			if(d3 <= 0){
+				d3 = 1.0;
+			}
+			System.out.println(counter);
+			if(sendDataToHololens)
+				hlc.SendDataToHololens(d1, d2, d3, requestMessage);
+				//hlc.SendDataToHololens(distance, svwInstance.getMean()[0], svwInstance.getMean()[1], requestMessage);
+				
 		}
 	}
 }

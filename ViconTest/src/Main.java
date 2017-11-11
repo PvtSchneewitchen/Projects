@@ -9,8 +9,8 @@ public class Main {
 	private static String Host = "192.168.178.29";
 	private static int Port = 6;
 	static DatagramSocket serverSocket;
-	DatagramPacket rmessage;
 	static DatagramPacket message;
+	
 
 	public static void main(String[] args) throws Exception {
 		HololensConnection hl = new HololensConnection();
@@ -19,6 +19,7 @@ public class Main {
 			double d = 1.11;
 			double c1 = 2.22222222;
 			double c2 = 3.33333333;
+			int doublesToSend = 3;
 			
 			try
 	        {
@@ -40,19 +41,17 @@ public class Main {
 				serverSocket.receive(rmessage);
 				System.out.println("Received from: " + rmessage.getAddress () + " : " +
 						rmessage.getPort ());
-				System.out.println(rmessage.getData().toString());
+				System.out.println(new String(rmessage.getData()));
 				
-				byte[] distanceMessage = new byte[16];
+				byte[] distanceMessage = new byte[doublesToSend*8];
 				//ByteBuffer.wrap(distanceMessage).put((byte)1);
 				ByteBuffer bf = ByteBuffer.allocate(distanceMessage.length);
 				bf.order(ByteOrder.LITTLE_ENDIAN).wrap(distanceMessage).putDouble(0, d);
 				bf.order(ByteOrder.LITTLE_ENDIAN).wrap(distanceMessage).putDouble(8, c1);
+				bf.order(ByteOrder.LITTLE_ENDIAN).wrap(distanceMessage).putDouble(16, c2);
 				
 				DatagramPacket smessage = new DatagramPacket(distanceMessage, distanceMessage.length, rmessage.getAddress() ,rmessage.getPort());
 				
-//				rmessage.setData(distanceMessage);
-//				rmessage.setLength(distanceMessage.length);
-//				message = new DatagramPacket(distanceMessage, distanceMessage.length, null, serverSocket.getLocalPort());
 				serverSocket.send(smessage);
 				System.out.println("sending message");
 //				hl.sendCapacity1ToHololens(serverSocket, c1);
