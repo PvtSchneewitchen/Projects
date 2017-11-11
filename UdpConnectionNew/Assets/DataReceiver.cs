@@ -8,8 +8,9 @@ using System.Linq;
 using System.Collections.Generic;
 using System.Net;
 using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Storage.Streams;
 #if !UNITY_EDITOR
+using Windows.UI.Notifications;
+using Windows.Storage.Streams;
 using Windows.Networking.Sockets;
 using Windows.Networking.Connectivity;
 using Windows.Networking;
@@ -20,6 +21,16 @@ public class DataReceiver : MonoBehaviour
     public string port = "6";
     public string externalIP_field = "192.168.178.20";
     public string externalPort_field = "6";
+
+    private static GameObject obj1;
+    private static GameObject obj2;
+    private static GameObject obj3;
+
+    private static double distance = 1;
+    private static double capacity1 = 1;
+    private static double capacity2 = 1;
+
+
 
     public readonly static Queue<Action> ExecuteOnMainThread = new Queue<Action>();
 
@@ -58,6 +69,12 @@ public class DataReceiver : MonoBehaviour
         
         await SendMessage("trigger from " + socket.Information.LocalAddress.ToString());
 
+        obj1 = GameObject.Find("AdjustableCube");
+        obj2 = GameObject.Find("AdjustableSphere");
+        obj3 = GameObject.Find("AdjustableCylinder");
+        if(obj1==null || obj2 == null || obj3 ==null)
+            Debug.Log("some object is null");
+
         Debug.Log("exit start");
     }
 
@@ -74,7 +91,7 @@ public class DataReceiver : MonoBehaviour
 
                 writer.WriteBytes(data);
                 await writer.StoreAsync();
-                Debug.Log("Sent: " + message);
+                //Debug.Log("Sent: " + message);
             }
         }
     }
@@ -88,7 +105,11 @@ public class DataReceiver : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+#if !UNITY_EDITOR
         SendMessage("Request from " + socket.Information.LocalAddress.ToString());
+#endif
+        if(obj1 != null && obj2 != null && obj3 != null)
+            UpdateElectricField(distance, capacity1, capacity2);
     }
 
 #if !UNITY_EDITOR
@@ -96,9 +117,6 @@ public class DataReceiver : MonoBehaviour
         Windows.Networking.Sockets.DatagramSocketMessageReceivedEventArgs args)
     {
         uint doublesToRead = args.GetDataReader().UnconsumedBufferLength/8;
-        double distance = 99;
-        double capacity1 = 99;
-        double capacity2 = 99;
         IInputStream inputStream = args.GetDataStream();
         DataReader dataReader = new DataReader(inputStream);
 
@@ -114,13 +132,33 @@ public class DataReceiver : MonoBehaviour
                 distance = actualDouble;
             doublesToRead--; 
         }
-        UpdateElectricField(distance, capacity1, capacity2);
     }
 #endif
-    private static void UpdateElectricField(double distance, double capacity1, double capacity2)
+    private void UpdateElectricField(double dDistance, double dCapacity1, double dCapacity2)
     {
-        Debug.Log("d: " + distance);
-        Debug.Log("c1: " + capacity1);
-        Debug.Log("c2: " + capacity2);
+        float fDistance = (float)dDistance;
+        if (float.IsPositiveInfinity(fDistance))
+            fDistance = float.MaxValue;
+        else if (float.IsNegativeInfinity(fDistance))
+            fDistance = float.MinValue;
+
+        float fCapacity1 = (float)dCapacity1;
+        if (float.IsPositiveInfinity(fCapacity1))
+            fDistance = float.MaxValue;
+        else if (float.IsNegativeInfinity(fCapacity1))
+            fDistance = float.MinValue;
+
+        float fCapacity2 = (float)dCapacity2;
+        if (float.IsPositiveInfinity(fCapacity2))
+            fDistance = float.MaxValue;
+        else if (float.IsNegativeInfinity(fCapacity2))
+            fDistance = float.MinValue;
+
+        obj1.transform.localScale = new Vector3(fDistance, fDistance, fDistance);
+        obj2.transform.localScale = new Vector3(fCapacity1, fCapacity1, fCapacity1);
+        obj3.transform.localScale = new Vector3(fCapacity2, fCapacity2, fCapacity2);
+/*        Debug.Log("d: " + fDistance);
+        Debug.Log("c1: " + fCapacity1);
+        Debug.Log("c2: " + fCapacity2);*/
     }
 }

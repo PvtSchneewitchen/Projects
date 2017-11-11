@@ -75,10 +75,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
         // Enable rendering:
         foreach (var component in rendererComponents)
-            component.enabled = false;
-
-        MeshRenderer CubeRenderer = GameObject.Find("CameraCube").GetComponent<MeshRenderer>();
-        CubeRenderer.enabled = true;
+            component.enabled = true;
 
         // Enable colliders:
         foreach (var component in colliderComponents)
@@ -99,9 +96,6 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         // Disable rendering:
         foreach (var component in rendererComponents)
             component.enabled = false;
-
-        MeshRenderer CubeRenderer = GameObject.Find("CameraCube").GetComponent<MeshRenderer>();
-        CubeRenderer.enabled = false;
 
         // Disable colliders:
         foreach (var component in colliderComponents)
