@@ -127,8 +127,8 @@ public class ViconAccess {
 			}
 			//change logging here
 			
-			//logDependingOnDistance(transformationKugel, transformationSensorBoard, capacities, distance);
-			logDependingOnCapacity(transformationKugel, transformationSensorBoard, capacities, distance);
+			logDependingOnDistance(transformationKugel, transformationSensorBoard, capacities, distance);
+			//logDependingOnCapacity(transformationKugel, transformationSensorBoard, capacities, distance);
 			//
 		}catch(NullPointerException e) {
 			long actualTime = System.currentTimeMillis();

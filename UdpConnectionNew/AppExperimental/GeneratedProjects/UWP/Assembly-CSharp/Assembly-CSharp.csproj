@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{54db3cce-582b-41df-b57a-8a711c9a6dca}</ProjectGuid>
+    <ProjectGuid>{000baf49-d787-498b-a12c-fb84c36f8e97}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AssemblyCSharpWSA</RootNamespace>
@@ -343,6 +343,9 @@
   <ItemGroup>
     <Compile Include="$(UnityProjectDir)Assets\DataReceiver.cs">
       <Link>DataReceiver.cs</Link>
+    </Compile>
+    <Compile Include="$(UnityProjectDir)Assets\ElectricFieldBehaviour.cs">
+      <Link>ElectricFieldBehaviour.cs</Link>
     </Compile>
     <Compile Include="$(UnityProjectDir)Assets\External\Support\AniCrane\AnimationSpeed.cs">
       <Link>External\Support\AniCrane\AnimationSpeed.cs</Link>

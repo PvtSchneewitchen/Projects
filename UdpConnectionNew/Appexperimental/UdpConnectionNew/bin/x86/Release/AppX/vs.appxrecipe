@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\bin\x86\Release\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-11T15:38:22.251</Modified>
+      <Modified>2017-11-17T15:48:49.344</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\bin\x86\Release\UdpConnectionNew.exe">
       <PackagePath>entrypoint\UdpConnectionNew.exe</PackagePath>
-      <Modified>2017-11-11T15:38:03.760</Modified>
+      <Modified>2017-11-17T15:48:34.813</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\.nuget\packages\microsoft.applicationinsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -501,7 +501,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\Resource.res">
       <PackagePath>Resource.res</PackagePath>
-      <Modified>2017-11-11T15:37:11.021</Modified>
+      <Modified>2017-11-17T15:48:09.710</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
@@ -567,15 +567,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\Data\boot.config">
       <PackagePath>Data\boot.config</PackagePath>
-      <Modified>2017-11-11T15:35:53.571</Modified>
+      <Modified>2017-11-17T15:47:13.400</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\Data\globalgamemanagers">
       <PackagePath>Data\globalgamemanagers</PackagePath>
-      <Modified>2017-11-11T15:35:52.554</Modified>
+      <Modified>2017-11-17T15:47:12.570</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\Data\level0">
       <PackagePath>Data\level0</PackagePath>
-      <Modified>2017-11-11T15:35:50.592</Modified>
+      <Modified>2017-11-17T15:47:11.096</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\Data\Resources\unity default resources">
       <PackagePath>Data\Resources\unity default resources</PackagePath>
@@ -583,35 +583,35 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\Data\Resources\unity_builtin_extra">
       <PackagePath>Data\Resources\unity_builtin_extra</PackagePath>
-      <Modified>2017-11-11T15:35:53.566</Modified>
+      <Modified>2017-11-17T15:47:13.397</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\Data\globalgamemanagers.assets">
       <PackagePath>Data\globalgamemanagers.assets</PackagePath>
-      <Modified>2017-11-11T15:35:52.821</Modified>
+      <Modified>2017-11-17T15:47:12.778</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\Data\resources.assets">
       <PackagePath>Data\resources.assets</PackagePath>
-      <Modified>2017-11-11T15:35:52.843</Modified>
+      <Modified>2017-11-17T15:47:12.796</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\Data\sharedassets0.assets">
       <PackagePath>Data\sharedassets0.assets</PackagePath>
-      <Modified>2017-11-11T15:35:53.061</Modified>
+      <Modified>2017-11-17T15:47:12.986</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\Data\level0.resS">
       <PackagePath>Data\level0.resS</PackagePath>
-      <Modified>2017-11-11T15:35:50.585</Modified>
+      <Modified>2017-11-17T15:47:11.090</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\Data\sharedassets0.assets.resS">
       <PackagePath>Data\sharedassets0.assets.resS</PackagePath>
-      <Modified>2017-11-11T15:35:53.054</Modified>
+      <Modified>2017-11-17T15:47:12.980</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\Data\managedAssemblies.txt">
       <PackagePath>Data\managedAssemblies.txt</PackagePath>
-      <Modified>2017-11-11T15:37:10.926</Modified>
+      <Modified>2017-11-17T15:48:09.649</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\Data\nativePlugins.txt">
       <PackagePath>Data\nativePlugins.txt</PackagePath>
-      <Modified>2017-11-11T15:37:10.932</Modified>
+      <Modified>2017-11-17T15:48:09.652</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\Data\StreamingAssets\Vuforia\SensorModelAndImage.dat">
       <PackagePath>Data\StreamingAssets\Vuforia\SensorModelAndImage.dat</PackagePath>
@@ -640,215 +640,215 @@
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\bin\x86\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-11T15:38:05.221</Modified>
+      <Modified>2017-11-17T15:48:35.732</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.UNETModule.dll">
       <PackagePath>UnityEngine.UNETModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:18.707</Modified>
+      <Modified>2017-11-17T15:48:46.646</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.UIModule.dll">
       <PackagePath>UnityEngine.UIModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:18.747</Modified>
+      <Modified>2017-11-17T15:48:46.674</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.UIElementsModule.dll">
       <PackagePath>UnityEngine.UIElementsModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:18.852</Modified>
+      <Modified>2017-11-17T15:48:46.747</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.TilemapModule.dll">
       <PackagePath>UnityEngine.TilemapModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:18.889</Modified>
+      <Modified>2017-11-17T15:48:46.774</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.TextRenderingModule.dll">
       <PackagePath>UnityEngine.TextRenderingModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:18.928</Modified>
+      <Modified>2017-11-17T15:48:46.803</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.TerrainPhysicsModule.dll">
       <PackagePath>UnityEngine.TerrainPhysicsModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:18.963</Modified>
+      <Modified>2017-11-17T15:48:46.829</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.TerrainModule.dll">
       <PackagePath>UnityEngine.TerrainModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:19.006</Modified>
+      <Modified>2017-11-17T15:48:46.859</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.StyleSheetsModule.dll">
       <PackagePath>UnityEngine.StyleSheetsModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:19.042</Modified>
+      <Modified>2017-11-17T15:48:46.889</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.SpriteMaskModule.dll">
       <PackagePath>UnityEngine.SpriteMaskModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:19.072</Modified>
+      <Modified>2017-11-17T15:48:46.912</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.UnityAnalyticsModule.dll">
       <PackagePath>UnityEngine.UnityAnalyticsModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:19.111</Modified>
+      <Modified>2017-11-17T15:48:46.944</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.WindModule.dll">
       <PackagePath>UnityEngine.WindModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:19.139</Modified>
+      <Modified>2017-11-17T15:48:46.972</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.WebModule.dll">
       <PackagePath>UnityEngine.WebModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:19.183</Modified>
+      <Modified>2017-11-17T15:48:47.006</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.VRModule.dll">
       <PackagePath>UnityEngine.VRModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:19.238</Modified>
+      <Modified>2017-11-17T15:48:47.056</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.VideoModule.dll">
       <PackagePath>UnityEngine.VideoModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:19.271</Modified>
+      <Modified>2017-11-17T15:48:47.084</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.UnityConnectModule.dll">
       <PackagePath>UnityEngine.UnityConnectModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:19.308</Modified>
+      <Modified>2017-11-17T15:48:47.118</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.UnityWebRequestAudioModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestAudioModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:19.338</Modified>
+      <Modified>2017-11-17T15:48:47.143</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.UnityWebRequestModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:19.383</Modified>
+      <Modified>2017-11-17T15:48:47.178</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.UnityWebRequestTextureModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestTextureModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:19.418</Modified>
+      <Modified>2017-11-17T15:48:47.202</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.UnityWebRequestWWWModule.dll">
       <PackagePath>UnityEngine.UnityWebRequestWWWModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:19.469</Modified>
+      <Modified>2017-11-17T15:48:47.232</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.VehiclesModule.dll">
       <PackagePath>UnityEngine.VehiclesModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:19.504</Modified>
+      <Modified>2017-11-17T15:48:47.266</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.ScreenCaptureModule.dll">
       <PackagePath>UnityEngine.ScreenCaptureModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:19.553</Modified>
+      <Modified>2017-11-17T15:48:47.288</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.dll">
       <PackagePath>UnityEngine.dll</PackagePath>
-      <Modified>2017-11-11T15:36:18.863</Modified>
+      <Modified>2017-11-17T15:47:31.869</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.DirectorModule.dll">
       <PackagePath>UnityEngine.DirectorModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:19.591</Modified>
+      <Modified>2017-11-17T15:48:47.312</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.CrashReportingModule.dll">
       <PackagePath>UnityEngine.CrashReportingModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:19.623</Modified>
+      <Modified>2017-11-17T15:48:47.339</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.CoreModule.dll">
       <PackagePath>UnityEngine.CoreModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:20.023</Modified>
+      <Modified>2017-11-17T15:48:47.653</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.ClothModule.dll">
       <PackagePath>UnityEngine.ClothModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:20.057</Modified>
+      <Modified>2017-11-17T15:48:47.684</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.AudioModule.dll">
       <PackagePath>UnityEngine.AudioModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:20.105</Modified>
+      <Modified>2017-11-17T15:48:47.729</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.AccessibilityModule.dll">
       <PackagePath>UnityEngine.AccessibilityModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:20.137</Modified>
+      <Modified>2017-11-17T15:48:47.756</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.AIModule.dll">
       <PackagePath>UnityEngine.AIModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:20.179</Modified>
+      <Modified>2017-11-17T15:48:47.790</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.AnimationModule.dll">
       <PackagePath>UnityEngine.AnimationModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:20.230</Modified>
+      <Modified>2017-11-17T15:48:47.830</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.ARModule.dll">
       <PackagePath>UnityEngine.ARModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:20.275</Modified>
+      <Modified>2017-11-17T15:48:47.857</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.GameCenterModule.dll">
       <PackagePath>UnityEngine.GameCenterModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:20.315</Modified>
+      <Modified>2017-11-17T15:48:47.896</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.PhysicsModule.dll">
       <PackagePath>UnityEngine.PhysicsModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:20.359</Modified>
+      <Modified>2017-11-17T15:48:47.935</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.Physics2DModule.dll">
       <PackagePath>UnityEngine.Physics2DModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:20.411</Modified>
+      <Modified>2017-11-17T15:48:47.985</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.PerformanceReportingModule.dll">
       <PackagePath>UnityEngine.PerformanceReportingModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:20.446</Modified>
+      <Modified>2017-11-17T15:48:48.016</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.ParticleSystemModule.dll">
       <PackagePath>UnityEngine.ParticleSystemModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:20.501</Modified>
+      <Modified>2017-11-17T15:48:48.063</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.ParticlesLegacyModule.dll">
       <PackagePath>UnityEngine.ParticlesLegacyModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:20.540</Modified>
+      <Modified>2017-11-17T15:48:48.097</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.GridModule.dll">
       <PackagePath>UnityEngine.GridModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:20.573</Modified>
+      <Modified>2017-11-17T15:48:48.120</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.ImageConversionModule.dll">
       <PackagePath>UnityEngine.ImageConversionModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:20.607</Modified>
+      <Modified>2017-11-17T15:48:48.145</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.IMGUIModule.dll">
       <PackagePath>UnityEngine.IMGUIModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:20.673</Modified>
+      <Modified>2017-11-17T15:48:48.193</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.InputModule.dll">
       <PackagePath>UnityEngine.InputModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:20.703</Modified>
+      <Modified>2017-11-17T15:48:48.218</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.JSONSerializeModule.dll">
       <PackagePath>UnityEngine.JSONSerializeModule.dll</PackagePath>
-      <Modified>2017-11-11T15:38:20.740</Modified>
+      <Modified>2017-11-17T15:48:48.243</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.Timeline.dll">
       <PackagePath>UnityEngine.Timeline.dll</PackagePath>
-      <Modified>2017-11-11T15:38:20.819</Modified>
+      <Modified>2017-11-17T15:48:48.303</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\nunit.framework.dll">
       <PackagePath>nunit.framework.dll</PackagePath>
-      <Modified>2017-11-11T15:38:20.909</Modified>
+      <Modified>2017-11-17T15:48:48.387</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.UI.dll">
       <PackagePath>UnityEngine.UI.dll</PackagePath>
-      <Modified>2017-11-11T15:38:21.066</Modified>
+      <Modified>2017-11-17T15:48:48.510</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.Analytics.dll">
       <PackagePath>UnityEngine.Analytics.dll</PackagePath>
-      <Modified>2017-11-11T15:38:21.102</Modified>
+      <Modified>2017-11-17T15:48:48.543</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.HoloLens.dll">
       <PackagePath>UnityEngine.HoloLens.dll</PackagePath>
-      <Modified>2017-11-11T15:38:21.162</Modified>
+      <Modified>2017-11-17T15:48:48.587</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\Vuforia.UnityExtensions.dll">
       <PackagePath>Vuforia.UnityExtensions.dll</PackagePath>
-      <Modified>2017-11-11T15:38:21.286</Modified>
+      <Modified>2017-11-17T15:48:48.678</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UWPNetworking.dll">
       <PackagePath>UWPNetworking.dll</PackagePath>
-      <Modified>2017-11-11T15:38:21.322</Modified>
+      <Modified>2017-11-17T15:48:48.703</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\UnityEngine.Networking.dll">
       <PackagePath>UnityEngine.Networking.dll</PackagePath>
-      <Modified>2017-11-11T15:38:21.457</Modified>
+      <Modified>2017-11-17T15:48:48.803</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\Assembly-CSharp.dll">
       <PackagePath>Assembly-CSharp.dll</PackagePath>
-      <Modified>2017-11-11T15:38:18.653</Modified>
+      <Modified>2017-11-17T15:48:46.607</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gruenepa\Documents\GithubRepos\Projects\UdpConnectionNew\Appexperimental\UdpConnectionNew\bin\x86\Release\Core\UdpConnectionNew.exe">
       <PackagePath>UdpConnectionNew.exe</PackagePath>
-      <Modified>2017-11-11T15:38:22.236</Modified>
+      <Modified>2017-11-17T15:48:49.339</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

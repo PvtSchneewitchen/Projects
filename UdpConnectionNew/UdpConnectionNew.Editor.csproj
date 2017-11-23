@@ -300,6 +300,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ProceduralToolkit\Editor\MeshFilterExtension.cs" />
+    <Compile Include="Assets\ProceduralToolkit\Editor\ProceduralToolkitMenu.cs" />
+    <Compile Include="Assets\ProceduralToolkit\Examples\LowPolyTerrainGenerator\Editor\LowPolyTerrainGeneratorConfiguratorEditor.cs" />
     <Compile Include="Assets\Vuforia\Editor\Scripts\OpenSourceInitializer.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -307,6 +310,16 @@
     <None Include="Assets\Editor\Vuforia\TargetsetData\SensorModelAndImage_info.xml" />
     <None Include="Assets\Editor\Vuforia\TargetsetData\VuforiaMars_Object_info.xml" />
     <None Include="Assets\Editor\Vuforia\VuforiaMars_VuMark\authoringinfo.xml" />
+    <None Include="Assets\ProceduralToolkit\Shaders\Debug\Debug Bitangents.shader" />
+    <None Include="Assets\ProceduralToolkit\Shaders\Debug\Debug Normals.shader" />
+    <None Include="Assets\ProceduralToolkit\Shaders\Debug\Debug Tangents.shader" />
+    <None Include="Assets\ProceduralToolkit\Shaders\Debug\Debug UV1.shader" />
+    <None Include="Assets\ProceduralToolkit\Shaders\Debug\Debug UV2.shader" />
+    <None Include="Assets\ProceduralToolkit\Shaders\Diffuse Vertex Color.shader" />
+    <None Include="Assets\ProceduralToolkit\Shaders\Gradient Skybox.shader" />
+    <None Include="Assets\ProceduralToolkit\Shaders\Specular Vertex Color.shader" />
+    <None Include="Assets\ProceduralToolkit\Shaders\Standard Vertex Color.shader" />
+    <None Include="Assets\ProceduralToolkit\Shaders\Unlit Vertex Color.shader" />
     <None Include="Assets\StreamingAssets\Vuforia\SensorModelAndImage.xml" />
     <None Include="Assets\StreamingAssets\Vuforia\SensorModelAndImage_OT.xml" />
     <None Include="Assets\StreamingAssets\Vuforia\VuforiaMars_Images.xml" />

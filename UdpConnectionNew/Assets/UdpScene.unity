@@ -172,7 +172,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!33 &21907484
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -279,7 +279,7 @@ GameObject:
   - component: {fileID: 124201614}
   - component: {fileID: 124201613}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: SensorBoardSphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -370,7 +370,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &434796654
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -580,6 +580,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 1e9c70c0fdb1e314eb59523c97c0843b, type: 2}
+    - target: {fileID: 154114, guid: 8458efc23d7803141a2fde1ff6308038, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8458efc23d7803141a2fde1ff6308038, type: 2}
   m_IsPrefabParent: 0
@@ -1038,12 +1042,12 @@ GameObject:
   - component: {fileID: 1071835848}
   - component: {fileID: 1071835847}
   m_Layer: 0
-  m_Name: ObjectTarget
+  m_Name: SensorBoard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1071835847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1085,9 +1089,9 @@ MonoBehaviour:
   mBBoxMin: {x: 0, y: 0, z: 0}
   mBBoxMax: {x: 1425, y: 950, z: 950}
   mPreviewImage: {fileID: 2800000, guid: 509afc1f33724daf96faf79da6fc171b, type: 3}
-  mLength: 0.45000002
-  mWidth: 0.3
-  mHeight: 0.3
+  mLength: 0.31499997
+  mWidth: 0.20999998
+  mHeight: 0.20999998
 --- !u!4 &1071835849
 Transform:
   m_ObjectHideFlags: 0
@@ -1096,7 +1100,7 @@ Transform:
   m_GameObject: {fileID: 1071835846}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.661, y: 0, z: 0.86}
-  m_LocalScale: {x: 0.45000002, y: 0.45000002, z: 0.45000002}
+  m_LocalScale: {x: 0.31499997, y: 0.31499997, z: 0.31499997}
   m_Children:
   - {fileID: 124201612}
   m_Father: {fileID: 0}
@@ -1233,6 +1237,46 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1312532000}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1476614699
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1476614700}
+  - component: {fileID: 1476614701}
+  m_Layer: 0
+  m_Name: ElectricFieldCreator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1476614700
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1476614699}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1554589260}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1476614701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1476614699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a912526130d3d424390c66b06cf3d0d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1554589255
 GameObject:
   m_ObjectHideFlags: 0
@@ -1327,7 +1371,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.76, y: 0.34, z: -0.63}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1476614700}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1380,6 +1425,10 @@ Prefab:
       propertyPath: DrawMaterial
       value: 
       objectReference: {fileID: 15303, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 1000012674329276, guid: 87596db941ad3bf45a16b586b6e28b5c, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 87596db941ad3bf45a16b586b6e28b5c, type: 2}
   m_IsPrefabParent: 0

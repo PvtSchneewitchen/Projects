@@ -7,18 +7,18 @@ import java.sql.Time;
 
 public class SensorViewer {
 	private static int port = 6;
-	private static boolean sendDataToHololens = true;
+	private static boolean sendDataToHololens = false;
 	private static DatagramPacket requestMessage;
 	
 	public static void main(String[] args) throws Exception {
 		HololensConnection hlc = new HololensConnection();
-//		SensorModel model = new SensorModel();
-//		SensorViewerWindow svwInstance = new SensorViewerWindow(model);
-//		svwInstance.setVisible(true);
-
-//		ViconAccess viconClass = new ViconAccess();
-//		viconClass.startVicon();
-//		viconClass.startLogger();
+		SensorModel model = new SensorModel();
+		SensorViewerWindow svwInstance = new SensorViewerWindow(model);
+		svwInstance.setVisible(true);
+		
+		ViconAccess viconClass = new ViconAccess();
+		viconClass.startVicon();
+		viconClass.startLogger();
 		
 		if(sendDataToHololens)
 			hlc.Connect(port);
@@ -34,23 +34,24 @@ public class SensorViewer {
 			if(sendDataToHololens)
 				requestMessage = hlc.WaitForRequestMessage();
 			
-//			double distance = viconClass.processCapacityWithVicon(svwInstance.getMean());
-//			viconClass.computeCapacitiesMean(svwInstance.getMean());//TODO call this method in new thread outside while loop
+			double distance = viconClass.processCapacityWithVicon(svwInstance.getMean());
+			viconClass.computeCapacitiesMean(svwInstance.getMean());//TODO call this method in new thread outside while loop
 			
-			d1 -= incrementFactor;
-			if(d1 <= 0){
-				d1 = 0.3;
-				counter++;
-				
-			}
-			d2 -= incrementFactor;
-			if(d2 <= 0)
-				d2 = 0.5;
-			d3 -= incrementFactor;
-			if(d3 <= 0){
-				d3 = 1.0;
-			}
-			System.out.println(counter);
+//			d1 -= incrementFactor;
+//			if(d1 <= 0){
+//				d1 = 0.3;
+//				counter++;
+//				
+//			}
+//			d2 -= incrementFactor;
+//			if(d2 <= 0)
+//				d2 = 0.5;
+//			d3 -= incrementFactor;
+//			if(d3 <= 0){
+//				d3 = 1.0;
+//			}
+//			System.out.println(counter);
+			
 			if(sendDataToHololens)
 				hlc.SendDataToHololens(d1, d2, d3, requestMessage);
 				//hlc.SendDataToHololens(distance, svwInstance.getMean()[0], svwInstance.getMean()[1], requestMessage);

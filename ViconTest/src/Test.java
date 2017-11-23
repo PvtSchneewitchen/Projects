@@ -37,13 +37,6 @@ public class Test {
 		for (String name : vicon.getSubjectNames())
 			System.out.println(name);
 		
-		byte[] b = new byte[2];
-		double d1 = 2.111;
-		double d2 = 1.222;
-		b[0] = (byte) d1;
-		b[1] = (byte) d2;
-		System.out.println(b);
-		
 
 		Subject kugel = vicon.getSubject("Kugel");
 		Subject sensorBoard = vicon.getSubject("Sensorboard");

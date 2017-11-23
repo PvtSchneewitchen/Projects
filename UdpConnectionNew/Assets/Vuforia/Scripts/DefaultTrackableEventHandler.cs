@@ -46,6 +46,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
             newStatus == TrackableBehaviour.Status.EXTENDED_TRACKED)
         {
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
+            
             OnTrackingFound();
         }
         else if (previousStatus == TrackableBehaviour.Status.TRACKED &&
@@ -73,9 +74,19 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         var colliderComponents = GetComponentsInChildren<Collider>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
 
+        GameObject sensor = GameObject.Find("SensorBoard");
+        GameObject sphere = GameObject.Find("SensorBoardSphere");
+
+        Debug.Log("sensor:" + sensor.transform.localPosition);
+        Debug.Log("sphere:" + sphere.transform.localPosition);
+
         // Enable rendering:
         foreach (var component in rendererComponents)
+        {
+            if(component.name == "SensorBoardSphere")
+                //component.transform.localPosition = new Vector3(sensor.transform.localPosition.x, sensor.transform.localPosition.y, sensor.transform.localPosition.z);
             component.enabled = true;
+        }
 
         // Enable colliders:
         foreach (var component in colliderComponents)
@@ -84,6 +95,9 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         // Enable canvas':
         foreach (var component in canvasComponents)
             component.enabled = true;
+
+
+        
     }
 
 
