@@ -24,8 +24,8 @@ public class SensorViewer {
 			hlc.Connect(port);
 		
 		long startTime = System.currentTimeMillis();
-		double d1 = 0.3;
-		double d2 = 0.5;
+		double d1 = 0.6;
+		double d2 = 0.8;
 		double d3 = 1.0;
 		double incrementFactor = 0.01;
 		int counter = 0;
@@ -37,21 +37,20 @@ public class SensorViewer {
 			double distance = viconClass.processCapacityWithVicon(svwInstance.getMean());
 			viconClass.computeCapacitiesMean(svwInstance.getMean());//TODO call this method in new thread outside while loop
 			
-//			d1 -= incrementFactor;
-//			if(d1 <= 0){
-//				d1 = 0.3;
-//				counter++;
-//				
-//			}
-//			d2 -= incrementFactor;
-//			if(d2 <= 0)
-//				d2 = 0.5;
-//			d3 -= incrementFactor;
-//			if(d3 <= 0){
-//				d3 = 1.0;
-//			}
-//			System.out.println(counter);
-			
+			d1 -= incrementFactor;
+			if(d1 <= 0){
+				d1 = 0.6;
+				counter++;
+				
+			}
+			d2 -= incrementFactor;
+			if(d2 <= 0)
+				d2 = 0.8;
+			d3 -= incrementFactor;
+			if(d3 <= 0){
+				d3 = 1.0;
+			}
+
 			if(sendDataToHololens)
 				hlc.SendDataToHololens(d1, d2, d3, requestMessage);
 				//hlc.SendDataToHololens(distance, svwInstance.getMean()[0], svwInstance.getMean()[1], requestMessage);
