@@ -1,123 +1,102 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class ElectricFieldBehaviour : MonoBehaviour
 {
-    private static readonly int numberOfSpheresOnLevel = 16;
-    private static readonly float sphereScale = 0.025f;
-    private GameObject[] level0 = new GameObject[numberOfSpheresOnLevel];
-    private GameObject[] level1 = new GameObject[numberOfSpheresOnLevel];
-    private GameObject[] level2 = new GameObject[numberOfSpheresOnLevel];
-    private GameObject[] level3 = new GameObject[numberOfSpheresOnLevel];
-    private GameObject[] level4 = new GameObject[numberOfSpheresOnLevel];
+    private static int numberOfSpheresOnLevel = 16;
+    private static float sphereScale = 0.025f;
+    private static int numberofLevels = 5;
+    private static float maxRadius = 0.3f;
+    private static Vector3 maxleveGap = new Vector3(0, maxRadius, 0);
+    private static Dictionary<int, GameObject[]> sphereOnLevel = new Dictionary<int, GameObject[]>();
+    private static float startTime;
+    private static int counter;
 
     // Use this for initialization
     void Start ()
     {
+        startTime = Time.time;
+        counter = 0;
         createFieldSpheres();
         createFieldGridHorizontal();
+
     }
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+	{
 
 	}
 
     private void createFieldSpheres()
     {
-        float angle;
-        float radius;
-        Vector3 levelGap;
-        Vector3 fieldOrigin = Camera.main.transform.localPosition + new Vector3(0.0f, 0.0f, 3.0f);
-
-        angle = 0.0f;
-        radius = 2.0f;
-        for (int i = 0; i < level0.Length; i++)
-        {
-            level0[i] = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-            level0[i].transform.localScale = new Vector3(sphereScale, sphereScale, sphereScale);
-            level0[i].transform.localPosition = fieldOrigin + new Vector3(radius * Mathf.Cos(angle), 0.0f, radius * Mathf.Sin(angle));
-
-            angle += 360.0f / numberOfSpheresOnLevel;
-        }
-
-        angle = 0.0f;
-        radius = 1.7f;
-        levelGap = new Vector3(0.0f, 0.4f, 0.0f);
-        for (int i = 0; i < level1.Length; i++)
-        {
-            level1[i] = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-            level1[i].transform.localScale = new Vector3(sphereScale, sphereScale, sphereScale);
-            level1[i].transform.localPosition = fieldOrigin + levelGap + new Vector3(radius * Mathf.Cos(angle), 0.0f, radius * Mathf.Sin(angle));
-
-            angle += 360.0f / numberOfSpheresOnLevel;
-        }
-
-        angle = 0.0f;
-        radius = 1.2f;
-        levelGap = new Vector3(0.0f, 0.7f, 0.0f);
-        for (int i = 0; i < level2.Length; i++)
-        {
-            level2[i] = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-            level2[i].transform.localScale = new Vector3(sphereScale, sphereScale, sphereScale);
-            level2[i].transform.localPosition = fieldOrigin + levelGap + new Vector3(radius * Mathf.Cos(angle), 0.0f, radius * Mathf.Sin(angle));
-
-            angle += 360.0f / numberOfSpheresOnLevel;
-        }
-
-        angle = 0.0f;
-        radius = 0.6f;
-        levelGap = new Vector3(0.0f, 0.9f, 0.0f);
-        for (int i = 0; i < level3.Length; i++)
-        {
-            level3[i] = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-            level3[i].transform.localScale = new Vector3(sphereScale, sphereScale, sphereScale);
-            level3[i].transform.localPosition = fieldOrigin + levelGap + new Vector3(radius * Mathf.Cos(angle), 0.0f, radius * Mathf.Sin(angle));
-
-            angle += 360.0f / numberOfSpheresOnLevel;
-        }
-
-        angle = 0.0f;
-        radius = 0.15f;
-        levelGap = new Vector3(0.0f, 1.05f, 0.0f);
-        for (int i = 0; i < level4.Length; i++)
-        {
-            level4[i] = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-            level4[i].transform.localScale = new Vector3(sphereScale, sphereScale, sphereScale);
-            level4[i].transform.localPosition = fieldOrigin + levelGap + new Vector3(radius * Mathf.Cos(angle), 0.0f, radius * Mathf.Sin(angle));
-
-            angle += 360.0f / numberOfSpheresOnLevel;
-        }
-    }
-
-    private void createFieldGrid()
-    {
+        float angle = 0.0f;
+        float radius = maxRadius;
+        Vector3 levelGap = new Vector3(0,0,0);
+        Vector3 fieldOrigin = Camera.main.transform.position + new Vector3(0.0f, 0.0f, 3.0f);
         
+
+        float[] customRadius = new[] {maxRadius,0.27f, 0.2f, 0.1f, 0.02f};
+        float[] customLeveGaps = new[] { 0.03f, 0.07f, 0.11f, 0.14f, 0.16f};
+
+        for (int i = 0; i < numberofLevels; i++)
+        {
+            sphereOnLevel.Add(i, new GameObject[numberOfSpheresOnLevel]);
+
+            //radius = (i == 0) ? maxRadius : maxRadius - maxRadius;
+            radius = customRadius[i];
+            for (int j = 0; j < numberOfSpheresOnLevel; j++)
+            {
+                sphereOnLevel[i][j] = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+                sphereOnLevel[i][j].transform.localScale = new Vector3(sphereScale, sphereScale, sphereScale);
+                if(i==0)
+                    sphereOnLevel[i][j].transform.position = fieldOrigin + new Vector3(radius * Mathf.Cos(Mathf.Deg2Rad * angle), 0.0f, radius * Mathf.Sin(Mathf.Deg2Rad * angle));
+                else
+                    sphereOnLevel[i][j].transform.position = fieldOrigin + new Vector3(0, customLeveGaps[i], 0) + new Vector3(radius * Mathf.Cos(Mathf.Deg2Rad * angle), 0.0f, radius * Mathf.Sin(Mathf.Deg2Rad * angle));
+
+                angle += 360.0f / numberOfSpheresOnLevel;
+            }
+            angle = 0.0f;
+            
+            levelGap += new Vector3(0, maxleveGap.y / numberofLevels, 0);
+        }
     }
 
     private void createFieldGridHorizontal()
     {
-        LineRenderer line = new LineRenderer();
-        line.startWidth = sphereScale;
-        line.endWidth = sphereScale;
-        line.alignment = LineAlignment.Local;
-        line.startColor = Color.white;
+        Dictionary<int, LineRenderer> horizontalLineRenderers = new Dictionary<int, LineRenderer>();
+        horizontalLineRenderers = createHorizontalLineRenderers();
 
-        line.SetPosition(0, level0[0].transform.localPosition);
-        line.SetPosition(1, level0[1].transform.localPosition);
-
-        line.enabled = true;
-
-        /*        for (int i = 0; i < level0.Length; i++)
-                {
-                    line.SetPosition(0, level0[i].transform.localPosition);
-                    line.SetPosition(1, level0[i+1].transform.localPosition);
-                }*/
+        for (int i = 0; i < numberofLevels; i++)
+        {
+            for (int j = 0; j < numberOfSpheresOnLevel; j++)
+            {
+                horizontalLineRenderers[i].SetPosition(j,sphereOnLevel[i][j].transform.position);
+            }
+        }
     }
 
     private void createFielGridVertical()
     {
 
+    }
+
+    private Dictionary<int, LineRenderer> createHorizontalLineRenderers()
+    {
+        Dictionary<int, LineRenderer> horizontalLineRenderers = new Dictionary<int, LineRenderer>();
+
+        for (int i = 0; i < numberofLevels; i++)
+        {
+            LineRenderer tmpLineRenderer = this.gameObject.AddComponent(typeof(LineRenderer)) as LineRenderer;
+            tmpLineRenderer.positionCount = numberOfSpheresOnLevel;
+            tmpLineRenderer.startWidth = sphereScale;
+            //add more LR-Attributes here
+
+            horizontalLineRenderers.Add(i, tmpLineRenderer);
+        }
+
+        return horizontalLineRenderers;
     }
 }
