@@ -6,7 +6,7 @@ using UnityEngine;
 public class ElectricFieldBehaviour : MonoBehaviour
 {
     private static int numberOfSpheresOnLevel = 16;
-    private static float sphereScale = 0.025f;
+    private static float sphereScale = 0.0025f;
     private static int numberofLevels = 5;
     private static float maxRadius = 0.3f;
     private static Vector3 maxleveGap = new Vector3(0, maxRadius, 0);
@@ -21,6 +21,7 @@ public class ElectricFieldBehaviour : MonoBehaviour
         counter = 0;
         createFieldSpheres();
         createFieldGridHorizontal();
+        createFielGridVertical();
 
     }
 	
@@ -35,7 +36,7 @@ public class ElectricFieldBehaviour : MonoBehaviour
         float angle = 0.0f;
         float radius = maxRadius;
         Vector3 levelGap = new Vector3(0,0,0);
-        Vector3 fieldOrigin = Camera.main.transform.position + new Vector3(0.0f, 0.0f, 3.0f);
+        Vector3 fieldOrigin = Camera.main.transform.position + new Vector3(0.0f, 0.0f, 1.0f);
         
 
         float[] customRadius = new[] {maxRadius,0.27f, 0.2f, 0.1f, 0.02f};
@@ -69,34 +70,62 @@ public class ElectricFieldBehaviour : MonoBehaviour
         Dictionary<int, LineRenderer> horizontalLineRenderers = new Dictionary<int, LineRenderer>();
         horizontalLineRenderers = createHorizontalLineRenderers();
 
-        for (int i = 0; i < numberofLevels; i++)
-        {
-            for (int j = 0; j < numberOfSpheresOnLevel; j++)
-            {
-                horizontalLineRenderers[i].SetPosition(j,sphereOnLevel[i][j].transform.position);
-            }
+               for (int i = 0; i < numberofLevels; i++)
+                {
+                    horizontalLineRenderers[i].positionCount = numberOfSpheresOnLevel+1;
+                    horizontalLineRenderers[i].startWidth = sphereScale/2;
+                    horizontalLineRenderers[i].enabled = true;
+                    //add more LR-Attributes here
+                    for (int j = 0; j < numberOfSpheresOnLevel; j++)
+                    {
+                        horizontalLineRenderers[i].SetPosition(j,sphereOnLevel[i][j].transform.localPosition);
+                        Debug.Log(sphereOnLevel[i][j].transform.localPosition);
+                    }
+                    horizontalLineRenderers[i].SetPosition(numberOfSpheresOnLevel, sphereOnLevel[i][0].transform.localPosition);
         }
-    }
-
-    private void createFielGridVertical()
-    {
-
     }
 
     private Dictionary<int, LineRenderer> createHorizontalLineRenderers()
     {
         Dictionary<int, LineRenderer> horizontalLineRenderers = new Dictionary<int, LineRenderer>();
+        
 
         for (int i = 0; i < numberofLevels; i++)
         {
-            LineRenderer tmpLineRenderer = this.gameObject.AddComponent(typeof(LineRenderer)) as LineRenderer;
-            tmpLineRenderer.positionCount = numberOfSpheresOnLevel;
-            tmpLineRenderer.startWidth = sphereScale;
-            //add more LR-Attributes here
-
-            horizontalLineRenderers.Add(i, tmpLineRenderer);
+            horizontalLineRenderers.Add(i, (new GameObject("line")).AddComponent<LineRenderer>());
         }
 
         return horizontalLineRenderers;
+    }
+
+    private void createFielGridVertical()
+    {
+        Dictionary<int, LineRenderer> verticalLineRenderers = new Dictionary<int, LineRenderer>();
+        verticalLineRenderers = createVerticalLineRenderers();
+
+        for (int i = 0; i < numberOfSpheresOnLevel; i++)
+        {
+            verticalLineRenderers[i].positionCount = numberofLevels;
+            verticalLineRenderers[i].startWidth = sphereScale/2;
+            verticalLineRenderers[i].enabled = true;
+            //add more LR-Attributes here
+            for (int j = 0; j < numberofLevels; j++)
+            {
+                verticalLineRenderers[i].SetPosition(j, sphereOnLevel[j][i].transform.localPosition);
+            }
+        }
+    }
+
+    private Dictionary<int, LineRenderer> createVerticalLineRenderers()
+    {
+        Dictionary<int, LineRenderer> verticalLineRenderers = new Dictionary<int, LineRenderer>();
+
+
+        for (int i = 0; i < numberOfSpheresOnLevel; i++)
+        {
+            verticalLineRenderers.Add(i, (new GameObject("line")).AddComponent<LineRenderer>());
+        }
+
+        return verticalLineRenderers;
     }
 }
