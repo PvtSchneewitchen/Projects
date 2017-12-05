@@ -11,14 +11,10 @@ public class ElectricFieldBehaviour : MonoBehaviour
     private static float maxRadius = 0.3f;
     private static Vector3 maxleveGap = new Vector3(0, maxRadius, 0);
     private static Dictionary<int, GameObject[]> sphereOnLevel = new Dictionary<int, GameObject[]>();
-    private static float startTime;
-    private static int counter;
 
     // Use this for initialization
     void Start ()
     {
-        startTime = Time.time;
-        counter = 0;
         createFieldSpheres();
         createFieldGridHorizontal();
         createFielGridVertical();

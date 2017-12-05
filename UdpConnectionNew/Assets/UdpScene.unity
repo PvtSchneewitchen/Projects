@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.45011342, g: 0.50015515, b: 0.57545877, a: 1}
+  m_IndirectSpecularColor: {r: 0.45011288, g: 0.50015485, b: 0.57545817, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1031,6 +1031,49 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 22ce5ec3fcf4db34298a42fdfbbece0e, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1067107989
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1067107990}
+  - component: {fileID: 1067107991}
+  m_Layer: 0
+  m_Name: LogReader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1067107990
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1067107989}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.6288667, y: -0.13118142, z: 1.0944154}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1067107991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1067107989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0990099df86e994409a3e939c808fd76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  directoryPath: C:\Users\gruepazu\Documents\Neuer Ordner\Projects\capacitivesensor\SensorDataViewer
+  pointSize: 0.1
+  sizeFactor: 10
 --- !u!1 &1071835846
 GameObject:
   m_ObjectHideFlags: 0
@@ -1252,7 +1295,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1476614700
 Transform:
   m_ObjectHideFlags: 0
