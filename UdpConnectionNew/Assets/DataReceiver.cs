@@ -4,10 +4,14 @@ using System;
 using System.IO;
 using System.Text;
 using System.Linq;
+
 //using HoloToolkit.Unity;
 using System.Collections.Generic;
 using System.Net;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Runtime.InteropServices;
+
+
 #if !UNITY_EDITOR
 using Windows.UI.Notifications;
 using Windows.Storage.Streams;
@@ -18,28 +22,24 @@ using Windows.Networking;
 #endif
 public class DataReceiver : MonoBehaviour
 {
-    public string port = "6";
-    public string externalIP_field = "192.168.178.20";
-    public string externalPort_field = "6";
+	public string port = "6";
+	public string externalIP_field = "192.168.178.20";
+	public string externalPort_field = "6";
 
-    private static GameObject obj1;
-    private static GameObject obj2;
-    private static GameObject obj3;
-
-    private static double distance = 1;
-    private static double capacity1 = 1;
-    private static double capacity2 = 1;
+	private static double dDistance = 1;
+	private static double dCapacity1;
+	private static double dCapacity2;
 
 
 
-    public readonly static Queue<Action> ExecuteOnMainThread = new Queue<Action>();
+	public readonly static Queue<Action> ExecuteOnMainThread = new Queue<Action> ();
 
 
-#if !UNITY_EDITOR
+	#if !UNITY_EDITOR
     DatagramSocket socket;
 #endif
-    // use this for initialization
-#if !UNITY_EDITOR
+	// use this for initialization
+	#if !UNITY_EDITOR
     async void Start()
     {
         Debug.Log("Waiting for a connection...");
@@ -69,19 +69,15 @@ public class DataReceiver : MonoBehaviour
         
         await SendMessage("trigger from " + socket.Information.LocalAddress.ToString());
 
-        obj1 = GameObject.Find("AdjustableCube");
-        obj2 = GameObject.Find("AdjustableSphere");
-        obj3 = GameObject.Find("AdjustableCylinder");
-        if(obj1==null || obj2 == null || obj3 ==null)
-            Debug.Log("some object is null");
-
         Debug.Log("exit start");
     }
 
     private async System.Threading.Tasks.Task SendMessage(string message)
     {
-        String externalIP = "192.168.178.20";
-        String externalPort = "6";
+    //TODO check following variables
+//        String externalIP = "192.168.178.20";
+//        String externalPort = "6";
+
         message = "From " + socket.Information.LocalAddress.ToString() + " to " + externalIP + " at " + externalPort;
         using (var stream = await socket.GetOutputStreamAsync(new Windows.Networking.HostName(externalIP), externalPort))
         {
@@ -95,24 +91,32 @@ public class DataReceiver : MonoBehaviour
             }
         }
     }
+
 #else
-    void Start()
-    {
+	void Start ()
+	{
+		//TODO delete "simulation"
+		dCapacity1 = 16.75f;
+		dCapacity2 = 32.55f;
+	}
+	#endif
 
-    }
-#endif
-
-    // Update is called once per frame
-    void Update()
-    {
+	// Update is called once per frame
+	void Update ()
+	{
 #if !UNITY_EDITOR
         SendMessage("Request from " + socket.Information.LocalAddress.ToString());
 #endif
-        if(obj1 != null && obj2 != null && obj3 != null)
-            UpdateElectricField(distance, capacity1, capacity2);
-    }
+		dCapacity1 += 0.0019;
+		dCapacity2 += 0.0008;
 
-#if !UNITY_EDITOR
+		if (dCapacity1 >= 16.94f)
+			dCapacity1 = 16.75f;
+		if (dCapacity2 >= 32.63f)
+			dCapacity2 = 32.55f;
+	}
+
+	#if !UNITY_EDITOR
     private async void Socket_MessageReceived(Windows.Networking.Sockets.DatagramSocket sender,
         Windows.Networking.Sockets.DatagramSocketMessageReceivedEventArgs args)
     {
@@ -134,31 +138,14 @@ public class DataReceiver : MonoBehaviour
         }
     }
 #endif
-    private void UpdateElectricField(double dDistance, double dCapacity1, double dCapacity2)
-    {
-        float fDistance = (float)dDistance;
-        if (float.IsPositiveInfinity(fDistance))
-            fDistance = float.MaxValue;
-        else if (float.IsNegativeInfinity(fDistance))
-            fDistance = float.MinValue;
 
-        float fCapacity1 = (float)dCapacity1;
-        if (float.IsPositiveInfinity(fCapacity1))
-            fDistance = float.MaxValue;
-        else if (float.IsNegativeInfinity(fCapacity1))
-            fDistance = float.MinValue;
+	public static float GetCapacity1 ()
+	{
+		return (float)dCapacity1;
+	}
 
-        float fCapacity2 = (float)dCapacity2;
-        if (float.IsPositiveInfinity(fCapacity2))
-            fDistance = float.MaxValue;
-        else if (float.IsNegativeInfinity(fCapacity2))
-            fDistance = float.MinValue;
-
-        obj1.transform.localScale = new Vector3(fDistance, fDistance, fDistance);
-        obj2.transform.localScale = new Vector3(fCapacity1, fCapacity1, fCapacity1);
-        obj3.transform.localScale = new Vector3(fCapacity2, fCapacity2, fCapacity2);
-/*        Debug.Log("d: " + fDistance);
-        Debug.Log("c1: " + fCapacity1);
-        Debug.Log("c2: " + fCapacity2);*/
-    }
+	public static float GetCapacity2 ()
+	{
+		return (float)dCapacity2;
+	}
 }

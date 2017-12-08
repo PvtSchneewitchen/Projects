@@ -3,125 +3,97 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+//using NUnit.Framework.Constraints;
+using System.Dynamic;
+
 public class ElectricFieldBehaviour : MonoBehaviour
 {
-    private static int numberOfSpheresOnLevel = 16;
-    private static float sphereScale = 0.0025f;
-    private static int numberofLevels = 5;
-    private static float maxRadius = 0.3f;
-    private static Vector3 maxleveGap = new Vector3(0, maxRadius, 0);
-    private static Dictionary<int, GameObject[]> sphereOnLevel = new Dictionary<int, GameObject[]>();
+	public string sDirectoryPath = "C:\\Users\\gruepazu\\Documents\\Neuer Ordner\\Projects\\capacitivesensor\\SensorDataViewer";
+	public string sFileNames = "log_distance_border_*.txt";
+	public static bool bShowField = false;
 
-    // Use this for initialization
-    void Start ()
-    {
-        createFieldSpheres();
-        createFieldGridHorizontal();
-        createFielGridVertical();
+	private int iFieldPointsToShow;
+	private ElectricalField eField;
+	private List<KeyValuePair<float, GameObject>> PointSortedByCapacitysum = new List<KeyValuePair<float, GameObject>> ();
+	private GameObject[] CurrentPointsShown = new GameObject[0];
+	private GameObject SensorBoard;
 
-    }
-	
-	// Update is called once per frame
-	void Update ()
+	void Start ()
 	{
+		//Create an Efield from the logs in the directorypath
+		ElectricalFieldCreator efc = new ElectricalFieldCreator ();
+		eField = efc.CreateElectricalFieldFromLogs (sDirectoryPath, sFileNames);
 
+		//set the maximum points to show to the amount of points from the log with the least distance to the origin 
+		iFieldPointsToShow = eField.FieldPoints.First ().Value.Count;
+		//initialize the array for the points that are currently shown with the maximum points to shown from above
+		CurrentPointsShown = new GameObject[iFieldPointsToShow];
+
+		//Give all points from the field a color depending on the distance to the origin and then hide all points
+		ElectricalFieldHelper.SetColorsAndHide (eField.FieldPoints);
+
+		//create a list of capacity sums and referring points and sort that list ascending by the value of this sums
+		PointSortedByCapacitysum = ElectricalFieldHelper.CreateSortedCapacitySumList (eField.FieldPoints);
+
+		//hide the origin point
+		eField.goOrigin.GetComponent<Renderer> ().enabled = false;
+
+		//initialize the sensorboard object 
+		SensorBoard = GameObject.Find ("SensorBoard");
+
+		//TODO delete
+		SensorBoard.GetComponent<Renderer> ().material.color = new Color (1 / 142, 1 / 104, 0);
+
+		//Atach the origin (parent of all fieldpoints) to the sonsorboard
+		ElectricalFieldHelper.AttachToSensorBoard (SensorBoard, eField.goOrigin);
 	}
 
-    private void createFieldSpheres()
-    {
-        float angle = 0.0f;
-        float radius = maxRadius;
-        Vector3 levelGap = new Vector3(0,0,0);
-        Vector3 fieldOrigin = Camera.main.transform.position + new Vector3(0.0f, 0.0f, 1.0f);
-        
+	void Update ()
+	{
+		if (bShowField)
+		{
+			//sensorboard was found by hololens so bShowField was set to true by trackable event handler from sensorboard gameobject
 
-        float[] customRadius = new[] {maxRadius,0.27f, 0.2f, 0.1f, 0.02f};
-        float[] customLeveGaps = new[] { 0.03f, 0.07f, 0.11f, 0.14f, 0.16f};
+			//initialize the array for the new computed points to show
+			GameObject[] UpdatedPointsToShow = new GameObject[iFieldPointsToShow];
 
-        for (int i = 0; i < numberofLevels; i++)
-        {
-            sphereOnLevel.Add(i, new GameObject[numberOfSpheresOnLevel]);
-
-            //radius = (i == 0) ? maxRadius : maxRadius - maxRadius;
-            radius = customRadius[i];
-            for (int j = 0; j < numberOfSpheresOnLevel; j++)
-            {
-                sphereOnLevel[i][j] = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-                sphereOnLevel[i][j].transform.localScale = new Vector3(sphereScale, sphereScale, sphereScale);
-                if(i==0)
-                    sphereOnLevel[i][j].transform.position = fieldOrigin + new Vector3(radius * Mathf.Cos(Mathf.Deg2Rad * angle), 0.0f, radius * Mathf.Sin(Mathf.Deg2Rad * angle));
-                else
-                    sphereOnLevel[i][j].transform.position = fieldOrigin + new Vector3(0, customLeveGaps[i], 0) + new Vector3(radius * Mathf.Cos(Mathf.Deg2Rad * angle), 0.0f, radius * Mathf.Sin(Mathf.Deg2Rad * angle));
-
-                angle += 360.0f / numberOfSpheresOnLevel;
-            }
-            angle = 0.0f;
-            
-            levelGap += new Vector3(0, maxleveGap.y / numberofLevels, 0);
-        }
-    }
-
-    private void createFieldGridHorizontal()
-    {
-        Dictionary<int, LineRenderer> horizontalLineRenderers = new Dictionary<int, LineRenderer>();
-        horizontalLineRenderers = createHorizontalLineRenderers();
-
-               for (int i = 0; i < numberofLevels; i++)
-                {
-                    horizontalLineRenderers[i].positionCount = numberOfSpheresOnLevel+1;
-                    horizontalLineRenderers[i].startWidth = sphereScale/2;
-                    horizontalLineRenderers[i].enabled = true;
-                    //add more LR-Attributes here
-                    for (int j = 0; j < numberOfSpheresOnLevel; j++)
-                    {
-                        horizontalLineRenderers[i].SetPosition(j,sphereOnLevel[i][j].transform.localPosition);
-                        Debug.Log(sphereOnLevel[i][j].transform.localPosition);
-                    }
-                    horizontalLineRenderers[i].SetPosition(numberOfSpheresOnLevel, sphereOnLevel[i][0].transform.localPosition);
-        }
-    }
-
-    private Dictionary<int, LineRenderer> createHorizontalLineRenderers()
-    {
-        Dictionary<int, LineRenderer> horizontalLineRenderers = new Dictionary<int, LineRenderer>();
-        
-
-        for (int i = 0; i < numberofLevels; i++)
-        {
-            horizontalLineRenderers.Add(i, (new GameObject("line")).AddComponent<LineRenderer>());
-        }
-
-        return horizontalLineRenderers;
-    }
-
-    private void createFielGridVertical()
-    {
-        Dictionary<int, LineRenderer> verticalLineRenderers = new Dictionary<int, LineRenderer>();
-        verticalLineRenderers = createVerticalLineRenderers();
-
-        for (int i = 0; i < numberOfSpheresOnLevel; i++)
-        {
-            verticalLineRenderers[i].positionCount = numberofLevels;
-            verticalLineRenderers[i].startWidth = sphereScale/2;
-            verticalLineRenderers[i].enabled = true;
-            //add more LR-Attributes here
-            for (int j = 0; j < numberofLevels; j++)
-            {
-                verticalLineRenderers[i].SetPosition(j, sphereOnLevel[j][i].transform.localPosition);
-            }
-        }
-    }
-
-    private Dictionary<int, LineRenderer> createVerticalLineRenderers()
-    {
-        Dictionary<int, LineRenderer> verticalLineRenderers = new Dictionary<int, LineRenderer>();
+			//get the capacity from the datareciever
+			float fCapacitySum = DataReceiver.GetCapacity1 () + DataReceiver.GetCapacity2 (); 
 
 
-        for (int i = 0; i < numberOfSpheresOnLevel; i++)
-        {
-            verticalLineRenderers.Add(i, (new GameObject("line")).AddComponent<LineRenderer>());
-        }
+			if (fCapacitySum >= PointSortedByCapacitysum.Last ().Key)
+			{
+				//Capacity sum is bigger than the highest value from the fieldpoints so all innermost points has to be shown
+				UpdatedPointsToShow = ElectricalFieldHelper.GetInnermostPoints (eField.FieldPoints, iFieldPointsToShow);
+			}
+			else if (fCapacitySum <= PointSortedByCapacitysum.First ().Key)
+			{
+				//Capacity sum is smaller than the smallest value from the fieldpoints so all outermost points has to be shown
+				UpdatedPointsToShow = ElectricalFieldHelper.GetOutermostPoints (eField.FieldPoints, iFieldPointsToShow);
+			}
+			else
+			{
+				//Capacity sum is between biggest and smallest value so new points to show have to be computed
+				UpdatedPointsToShow = ElectricalFieldHelper.UpdatePointsToShow (fCapacitySum, PointSortedByCapacitysum, iFieldPointsToShow);	
+			}
 
-        return verticalLineRenderers;
-    }
+			//make the new points visible and set them as current shown points
+			ElectricalFieldHelper.MakeNewPointsVisible (UpdatedPointsToShow, CurrentPointsShown);
+			CurrentPointsShown = UpdatedPointsToShow;
+		}
+		else
+		{
+			//sensorboard was lost or not found by hololens
+
+			//Hide the shown fieldpoints
+			foreach (var point in CurrentPointsShown)
+			{
+				if (point != null)
+				{
+					point.GetComponent <Renderer> ().enabled = false;
+				}
+			}
+		}
+	}
+
 }

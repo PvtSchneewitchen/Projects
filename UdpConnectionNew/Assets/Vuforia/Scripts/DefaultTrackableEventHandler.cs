@@ -46,6 +46,9 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
             newStatus == TrackableBehaviour.Status.EXTENDED_TRACKED)
         {
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
+
+            GameObject InfoText = GameObject.Find ("SensorBoardInfo");
+            InfoText.GetComponent <TextMesh>().text = "Sensor Found";
             
             OnTrackingFound();
         }
@@ -53,6 +56,9 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
                  newStatus == TrackableBehaviour.Status.NOT_FOUND)
         {
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " lost");
+
+			GameObject InfoText = GameObject.Find ("SensorBoardInfo");
+            InfoText.GetComponent <TextMesh>().text = "Search for Sensor";
             OnTrackingLost();
         }
         else
@@ -70,54 +76,13 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
     protected virtual void OnTrackingFound()
     {
-        var rendererComponents = GetComponentsInChildren<Renderer>(true);
-        var colliderComponents = GetComponentsInChildren<Collider>(true);
-        var canvasComponents = GetComponentsInChildren<Canvas>(true);
-
-        GameObject sensor = GameObject.Find("SensorBoard");
-        GameObject sphere = GameObject.Find("SensorBoardSphere");
-
-        Debug.Log("sensor:" + sensor.transform.localPosition);
-        Debug.Log("sphere:" + sphere.transform.localPosition);
-
-        // Enable rendering:
-        foreach (var component in rendererComponents)
-        {
-            if(component.name == "SensorBoardSphere")
-                //component.transform.localPosition = new Vector3(sensor.transform.localPosition.x, sensor.transform.localPosition.y, sensor.transform.localPosition.z);
-            component.enabled = true;
-        }
-
-        // Enable colliders:
-        foreach (var component in colliderComponents)
-            component.enabled = true;
-
-        // Enable canvas':
-        foreach (var component in canvasComponents)
-            component.enabled = true;
-
-
-        
+        ElectricFieldBehaviour.bShowField = true;
     }
 
 
     protected virtual void OnTrackingLost()
     {
-        var rendererComponents = GetComponentsInChildren<Renderer>(true);
-        var colliderComponents = GetComponentsInChildren<Collider>(true);
-        var canvasComponents = GetComponentsInChildren<Canvas>(true);
-
-        // Disable rendering:
-        foreach (var component in rendererComponents)
-            component.enabled = false;
-
-        // Disable colliders:
-        foreach (var component in colliderComponents)
-            component.enabled = false;
-
-        // Disable canvas':
-        foreach (var component in canvasComponents)
-            component.enabled = false;
+		ElectricFieldBehaviour.bShowField = false;
     }
 
     #endregion // PRIVATE_METHODS

@@ -52,6 +52,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\DataReceiver.cs" />
+     <Compile Include="Assets\ElectricalField.cs" />
+     <Compile Include="Assets\ElectricalFIeldCreator.cs" />
+     <Compile Include="Assets\ElectricalFieldHelper.cs" />
      <Compile Include="Assets\ElectricFieldBehaviour.cs" />
      <Compile Include="Assets\External\Support\AniCrane\AnimationSpeed.cs" />
      <Compile Include="Assets\External\Support\Fitbox\Fitbox.cs" />
@@ -59,11 +62,11 @@
      <Compile Include="Assets\External\Support\Spatial Mapping\SpatialMapping.cs" />
      <Compile Include="Assets\External\Support\Underworld\UnderworldReset.cs" />
      <Compile Include="Assets\External\Support\Underworld\UnderworldSound.cs" />
+     <Compile Include="Assets\FieldPoint.cs" />
      <Compile Include="Assets\GestureCommands.cs" />
      <Compile Include="Assets\GestureRecognizer.cs" />
+     <Compile Include="Assets\LogBox.cs" />
      <Compile Include="Assets\LogReader.cs" />
-     <Compile Include="Assets\LogStruct.cs" />
-     <Compile Include="Assets\PrintLogPoints.cs" />
      <Compile Include="Assets\ProceduralToolkit\ArrayE.cs" />
      <Compile Include="Assets\ProceduralToolkit\ColorE.cs" />
      <Compile Include="Assets\ProceduralToolkit\ColorHSV.cs" />
@@ -119,6 +122,7 @@
      <Compile Include="Assets\ProceduralToolkit\TextureE.cs" />
      <Compile Include="Assets\ProceduralToolkit\Vector2Int.cs" />
      <Compile Include="Assets\ProceduralToolkit\VectorE.cs" />
+     <Compile Include="Assets\ScalePositionTest.cs" />
      <Compile Include="Assets\Vuforia\Scripts\DefaultInitializationErrorHandler.cs" />
      <Compile Include="Assets\Vuforia\Scripts\DefaultSmartTerrainEventHandler.cs" />
      <Compile Include="Assets\Vuforia\Scripts\DefaultTrackableEventHandler.cs" />
