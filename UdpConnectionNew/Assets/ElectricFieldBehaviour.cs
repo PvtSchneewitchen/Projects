@@ -8,8 +8,8 @@ using System.Dynamic;
 
 public class ElectricFieldBehaviour : MonoBehaviour
 {
-	public string sDirectoryPath = "C:\\Users\\gruepazu\\Documents\\Neuer Ordner\\Projects\\capacitivesensor\\SensorDataViewer";
-	public string sFileNames = "log_distance_border_*.txt";
+	private string sDirectoryPath = "C:\\Users\\Patrick\\Documents\\GithubRepos\\Projects\\capacitivesensor\\SensorDataViewer";
+	private string sFileNames = "log_distance_border_*.txt";
 	public static bool bShowField = false;
 
 	private int iFieldPointsToShow;

@@ -4,17 +4,9 @@ using System;
 using System.IO;
 using System.Text;
 using System.Linq;
-
 //using HoloToolkit.Unity;
 using System.Collections.Generic;
-using System.Net;
-using System.Runtime.InteropServices.WindowsRuntime;
-using System.Runtime.InteropServices;
-
-
 #if !UNITY_EDITOR
-using Windows.UI.Notifications;
-using Windows.Storage.Streams;
 using Windows.Networking.Sockets;
 using Windows.Networking.Connectivity;
 using Windows.Networking;
@@ -129,11 +121,11 @@ public class DataReceiver : MonoBehaviour
         {
             double actualDouble = dataReader.ReadDouble();
             if (doublesToRead == 1)
-                capacity2 = actualDouble;
+                dCapacity2 = actualDouble;
             else if (doublesToRead == 2)
-                capacity1 = actualDouble;
+                dCapacity1 = actualDouble;
             else if (doublesToRead == 3)
-                distance = actualDouble;
+                dDistance = actualDouble;
             doublesToRead--; 
         }
     }
