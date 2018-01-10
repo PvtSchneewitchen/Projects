@@ -1,0 +1,553 @@
+-------------------------------------------------------------------------
+Nov 17, 2017 2:32:10 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,54300		Y:0,41234	Z:0,67965	||	A:-14,11891	B:59,62443	C:162,38281
+Transformation 2:  X:0,52733		Y:0,44770	Z:0,58786	||	A:-92,74770	B:-1,19223	C:-1,16730
+Distance between Trans1 and Trans2: 0,1
+Capacity Mean 1: 32,55942	||	Capacity Mean 2: 16,82615
+Capacity Sensor 1: 32,55947	||	Capacity Sensor 2: 16,86218
+-------------------------------------------------------------------------
+Nov 17, 2017 2:32:15 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,56976		Y:0,50284	Z:0,65815	||	A:80,79909	B:51,88175	C:-165,42333
+Transformation 2:  X:0,52713		Y:0,44781	Z:0,58784	||	A:-92,72014	B:-1,18149	C:-1,14393
+Distance between Trans1 and Trans2: 0,099
+Capacity Mean 1: 32,56011	||	Capacity Mean 2: 16,82730
+Capacity Sensor 1: 32,62827	||	Capacity Sensor 2: 16,83081
+-------------------------------------------------------------------------
+Nov 17, 2017 2:32:22 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,48292		Y:0,48908	Z:0,66708	||	A:133,97896	B:53,36096	C:-171,76509
+Transformation 2:  X:0,52740		Y:0,44777	Z:0,58773	||	A:-92,69711	B:-1,18201	C:-1,17069
+Distance between Trans1 and Trans2: 0,1
+Capacity Mean 1: 32,56165	||	Capacity Mean 2: 16,82819
+Capacity Sensor 1: 32,58302	||	Capacity Sensor 2: 16,84138
+-------------------------------------------------------------------------
+Nov 17, 2017 2:32:28 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,47059		Y:0,44170	Z:0,66928	||	A:172,93009	B:52,57906	C:-170,88144
+Transformation 2:  X:0,52729		Y:0,44753	Z:0,58804	||	A:-92,68911	B:-1,14145	C:-1,10281
+Distance between Trans1 and Trans2: 0,099
+Capacity Mean 1: 32,56145	||	Capacity Mean 2: 16,82843
+Capacity Sensor 1: 32,56532	||	Capacity Sensor 2: 16,84373
+-------------------------------------------------------------------------
+Nov 17, 2017 2:32:40 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,56624		Y:0,43994	Z:0,67953	||	A:-170,28198	B:55,14048	C:169,59238
+Transformation 2:  X:0,52725		Y:0,44752	Z:0,58804	||	A:-92,75940	B:-1,15325	C:-1,19693
+Distance between Trans1 and Trans2: 0,1
+Capacity Mean 1: 32,56089	||	Capacity Mean 2: 16,82924
+Capacity Sensor 1: 32,56196	||	Capacity Sensor 2: 16,83918
+-------------------------------------------------------------------------
+Nov 17, 2017 2:32:54 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,57066		Y:0,37958	Z:0,66718	||	A:-41,68284	B:59,73064	C:-154,42310
+Transformation 2:  X:0,50012		Y:0,44658	Z:0,64570	||	A:89,44413	B:2,14629	C:127,82570
+Distance between Trans1 and Trans2: 0,1
+Capacity Mean 1: 32,56106	||	Capacity Mean 2: 16,83469
+Capacity Sensor 1: 32,55807	||	Capacity Sensor 2: 16,93088
+-------------------------------------------------------------------------
+Nov 17, 2017 2:33:05 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,59456		Y:0,42638	Z:0,66956	||	A:16,32133	B:54,53849	C:-150,54198
+Transformation 2:  X:0,50010		Y:0,44660	Z:0,64572	||	A:89,44807	B:2,13724	C:127,80044
+Distance between Trans1 and Trans2: 0,099
+Capacity Mean 1: 32,56120	||	Capacity Mean 2: 16,83750
+Capacity Sensor 1: 32,56231	||	Capacity Sensor 2: 16,87579
+-------------------------------------------------------------------------
+Nov 17, 2017 2:33:12 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,58562		Y:0,48563	Z:0,67391	||	A:62,61840	B:51,36261	C:-146,42945
+Transformation 2:  X:0,50009		Y:0,44645	Z:0,64580	||	A:89,43663	B:2,14412	C:127,77305
+Distance between Trans1 and Trans2: 0,098
+Capacity Mean 1: 32,55941	||	Capacity Mean 2: 16,84001
+Capacity Sensor 1: 32,56883	||	Capacity Sensor 2: 16,85746
+-------------------------------------------------------------------------
+Nov 17, 2017 2:33:16 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,54333		Y:0,49939	Z:0,71753	||	A:86,08436	B:42,89006	C:-157,55688
+Transformation 2:  X:0,49999		Y:0,44665	Z:0,64569	||	A:89,42969	B:2,19903	C:127,69233
+Distance between Trans1 and Trans2: 0,099
+Capacity Mean 1: 32,55911	||	Capacity Mean 2: 16,84123
+Capacity Sensor 1: 32,55672	||	Capacity Sensor 2: 16,84986
+-------------------------------------------------------------------------
+Nov 17, 2017 2:33:24 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,59537		Y:0,41933	Z:0,65875	||	A:-140,13677	B:-12,91450	C:133,12016
+Transformation 2:  X:0,50030		Y:0,44653	Z:0,64556	||	A:89,43894	B:2,16268	C:128,04330
+Distance between Trans1 and Trans2: 0,1
+Capacity Mean 1: 32,55842	||	Capacity Mean 2: 16,84592
+Capacity Sensor 1: 32,56531	||	Capacity Sensor 2: 16,90510
+-------------------------------------------------------------------------
+Nov 17, 2017 2:33:33 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,44315		Y:0,49377	Z:0,71127	||	A:-173,41421	B:33,15957	C:-145,38368
+Transformation 2:  X:0,50094		Y:0,44654	Z:0,64497	||	A:89,51816	B:2,23458	C:128,80112
+Distance between Trans1 and Trans2: 0,1
+Capacity Mean 1: 32,55849	||	Capacity Mean 2: 16,85186
+Capacity Sensor 1: 32,56026	||	Capacity Sensor 2: 16,87454
+-------------------------------------------------------------------------
+Nov 17, 2017 2:33:41 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,58960		Y:0,44914	Z:0,68881	||	A:-121,80039	B:41,10320	C:-155,23702
+Transformation 2:  X:0,49966		Y:0,44660	Z:0,64598	||	A:89,41061	B:2,15983	C:127,43686
+Distance between Trans1 and Trans2: 0,1
+Capacity Mean 1: 32,55896	||	Capacity Mean 2: 16,85931
+Capacity Sensor 1: 32,56566	||	Capacity Sensor 2: 16,89728
+-------------------------------------------------------------------------
+Nov 17, 2017 2:33:49 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,59167		Y:0,41323	Z:0,66767	||	A:-80,91445	B:40,10914	C:-152,49256
+Transformation 2:  X:0,50012		Y:0,44661	Z:0,64563	||	A:89,45065	B:2,15198	C:127,85548
+Distance between Trans1 and Trans2: 0,1
+Capacity Mean 1: 32,55948	||	Capacity Mean 2: 16,86694
+Capacity Sensor 1: 32,56347	||	Capacity Sensor 2: 16,93536
+-------------------------------------------------------------------------
+Nov 17, 2017 2:33:58 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,59685		Y:0,42979	Z:0,65915	||	A:-82,88681	B:32,67204	C:-177,89693
+Transformation 2:  X:0,50014		Y:0,44659	Z:0,64561	||	A:89,45008	B:2,15037	C:127,87830
+Distance between Trans1 and Trans2: 0,099
+Capacity Mean 1: 32,55995	||	Capacity Mean 2: 16,87634
+Capacity Sensor 1: 32,56722	||	Capacity Sensor 2: 16,93953
+-------------------------------------------------------------------------
+Nov 17, 2017 2:34:09 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,50734		Y:0,45105	Z:0,68475	||	A:-149,28108	B:39,98653	C:-162,02967
+Transformation 2:  X:0,52725		Y:0,44748	Z:0,58793	||	A:-92,74697	B:-1,15247	C:-1,03958
+Distance between Trans1 and Trans2: 0,099
+Capacity Mean 1: 32,56011	||	Capacity Mean 2: 16,88615
+Capacity Sensor 1: 32,56598	||	Capacity Sensor 2: 16,92178
+-------------------------------------------------------------------------
+Nov 17, 2017 2:28:55 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,62588		Y:0,51657	Z:0,74635	||	A:43,75092	B:57,60508	C:-174,59655
+Transformation 2:  X:0,52724		Y:0,44759	Z:0,58814	||	A:-92,70747	B:-1,17332	C:-1,10802
+Distance between Trans1 and Trans2: 0,199
+Capacity Mean 1: 32,55456	||	Capacity Mean 2: 16,91629
+Capacity Sensor 1: 32,55671	||	Capacity Sensor 2: 16,89729
+-------------------------------------------------------------------------
+Nov 17, 2017 2:29:00 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,59658		Y:0,58613	Z:0,71101	||	A:77,61028	B:55,74243	C:-167,85784
+Transformation 2:  X:0,52729		Y:0,44772	Z:0,58799	||	A:-92,73049	B:-1,17213	C:-1,10325
+Distance between Trans1 and Trans2: 0,198
+Capacity Mean 1: 32,55556	||	Capacity Mean 2: 16,91053
+Capacity Sensor 1: 32,56256	||	Capacity Sensor 2: 16,88557
+-------------------------------------------------------------------------
+Nov 17, 2017 2:29:05 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,49703		Y:0,56706	Z:0,74535	||	A:114,26408	B:56,15160	C:-160,26929
+Transformation 2:  X:0,52734		Y:0,44760	Z:0,58811	||	A:-92,69682	B:-1,15698	C:-1,08464
+Distance between Trans1 and Trans2: 0,2
+Capacity Mean 1: 32,55662	||	Capacity Mean 2: 16,90624
+Capacity Sensor 1: 32,56300	||	Capacity Sensor 2: 16,87731
+-------------------------------------------------------------------------
+Nov 17, 2017 2:29:10 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,39001		Y:0,51152	Z:0,71560	||	A:140,42279	B:53,36483	C:-164,39428
+Transformation 2:  X:0,52771		Y:0,44799	Z:0,58786	||	A:-92,60120	B:-1,35007	C:-1,48150
+Distance between Trans1 and Trans2: 0,198
+Capacity Mean 1: 32,55744	||	Capacity Mean 2: 16,90250
+Capacity Sensor 1: 32,56517	||	Capacity Sensor 2: 16,87491
+-------------------------------------------------------------------------
+Nov 17, 2017 2:29:17 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,41694		Y:0,47642	Z:0,75090	||	A:167,07523	B:57,02626	C:-176,56336
+Transformation 2:  X:0,52729		Y:0,44736	Z:0,58807	||	A:-92,71314	B:-1,15669	C:-1,05225
+Distance between Trans1 and Trans2: 0,199
+Capacity Mean 1: 32,55822	||	Capacity Mean 2: 16,89690
+Capacity Sensor 1: 32,56116	||	Capacity Sensor 2: 16,85942
+-------------------------------------------------------------------------
+Nov 17, 2017 2:29:23 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,44128		Y:0,35072	Z:0,74011	||	A:-147,56522	B:55,54871	C:-171,19950
+Transformation 2:  X:0,52737		Y:0,44751	Z:0,58819	||	A:-92,71493	B:-1,11885	C:-1,06241
+Distance between Trans1 and Trans2: 0,2
+Capacity Mean 1: 32,55910	||	Capacity Mean 2: 16,88882
+Capacity Sensor 1: 32,55968	||	Capacity Sensor 2: 16,85747
+-------------------------------------------------------------------------
+Nov 17, 2017 2:29:28 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,50443		Y:0,31187	Z:0,73227	||	A:-109,58272	B:56,06223	C:-174,23753
+Transformation 2:  X:0,52730		Y:0,44757	Z:0,58813	||	A:-92,70315	B:-1,15034	C:-1,07512
+Distance between Trans1 and Trans2: 0,199
+Capacity Mean 1: 32,55991	||	Capacity Mean 2: 16,88296
+Capacity Sensor 1: 32,55967	||	Capacity Sensor 2: 16,85003
+-------------------------------------------------------------------------
+Nov 17, 2017 2:29:32 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,59797		Y:0,31692	Z:0,71794	||	A:-68,55880	B:59,34976	C:-178,17971
+Transformation 2:  X:0,52731		Y:0,44755	Z:0,58811	||	A:-92,69694	B:-1,15314	C:-1,07943
+Distance between Trans1 and Trans2: 0,197
+Capacity Mean 1: 32,56045	||	Capacity Mean 2: 16,87746
+Capacity Sensor 1: 32,56046	||	Capacity Sensor 2: 16,85412
+-------------------------------------------------------------------------
+Nov 17, 2017 2:29:37 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,67060		Y:0,36914	Z:0,70204	||	A:-23,49232	B:53,01746	C:-155,08148
+Transformation 2:  X:0,52740		Y:0,44761	Z:0,58804	||	A:-92,71153	B:-1,16626	C:-1,08068
+Distance between Trans1 and Trans2: 0,199
+Capacity Mean 1: 32,56090	||	Capacity Mean 2: 16,87235
+Capacity Sensor 1: 32,55884	||	Capacity Sensor 2: 16,84865
+-------------------------------------------------------------------------
+Nov 17, 2017 2:29:50 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,61500		Y:0,48921	Z:0,76185	||	A:65,55622	B:42,69751	C:-168,50504
+Transformation 2:  X:0,52726		Y:0,44753	Z:0,58787	||	A:-92,70935	B:-1,29063	C:-1,11522
+Distance between Trans1 and Trans2: 0,199
+Capacity Mean 1: 32,56064	||	Capacity Mean 2: 16,85895
+Capacity Sensor 1: 32,55705	||	Capacity Sensor 2: 16,83812
+-------------------------------------------------------------------------
+Nov 17, 2017 2:29:55 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,52763		Y:0,57533	Z:0,74128	||	A:87,99734	B:46,05444	C:-169,88511
+Transformation 2:  X:0,52735		Y:0,44762	Z:0,58802	||	A:-92,74192	B:-1,18665	C:-1,09085
+Distance between Trans1 and Trans2: 0,199
+Capacity Mean 1: 32,56028	||	Capacity Mean 2: 16,85451
+Capacity Sensor 1: 32,55713	||	Capacity Sensor 2: 16,82821
+-------------------------------------------------------------------------
+Nov 17, 2017 2:30:01 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,51284		Y:0,57080	Z:0,74211	||	A:108,09127	B:47,87221	C:-174,97472
+Transformation 2:  X:0,52732		Y:0,44759	Z:0,58809	||	A:-92,70038	B:-1,15836	C:-1,08165
+Distance between Trans1 and Trans2: 0,198
+Capacity Mean 1: 32,55994	||	Capacity Mean 2: 16,84961
+Capacity Sensor 1: 32,55912	||	Capacity Sensor 2: 16,82853
+-------------------------------------------------------------------------
+Nov 17, 2017 2:30:06 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,39671		Y:0,49422	Z:0,73115	||	A:146,15333	B:50,82696	C:-174,99632
+Transformation 2:  X:0,52730		Y:0,44758	Z:0,58806	||	A:-92,70706	B:-1,15705	C:-1,09329
+Distance between Trans1 and Trans2: 0,199
+Capacity Mean 1: 32,55962	||	Capacity Mean 2: 16,84537
+Capacity Sensor 1: 32,55928	||	Capacity Sensor 2: 16,82458
+-------------------------------------------------------------------------
+Nov 17, 2017 2:30:11 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,42722		Y:0,42014	Z:0,75628	||	A:-164,90672	B:53,99282	C:-177,33387
+Transformation 2:  X:0,52739		Y:0,44749	Z:0,58800	||	A:-92,72532	B:-1,20702	C:-1,07226
+Distance between Trans1 and Trans2: 0,198
+Capacity Mean 1: 32,55922	||	Capacity Mean 2: 16,84121
+Capacity Sensor 1: 32,56116	||	Capacity Sensor 2: 16,82515
+-------------------------------------------------------------------------
+Nov 17, 2017 2:30:16 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,48817		Y:0,32425	Z:0,73665	||	A:-123,56268	B:52,03528	C:-178,69090
+Transformation 2:  X:0,52772		Y:0,44777	Z:0,58813	||	A:-92,56489	B:-1,37065	C:-1,32737
+Distance between Trans1 and Trans2: 0,197
+Capacity Mean 1: 32,55896	||	Capacity Mean 2: 16,83783
+Capacity Sensor 1: 32,55964	||	Capacity Sensor 2: 16,82873
+-------------------------------------------------------------------------
+Nov 17, 2017 2:30:21 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,58763		Y:0,30450	Z:0,71188	||	A:-78,88537	B:56,26894	C:179,73040
+Transformation 2:  X:0,52713		Y:0,44748	Z:0,58801	||	A:-92,78119	B:-1,14901	C:-1,11949
+Distance between Trans1 and Trans2: 0,199
+Capacity Mean 1: 32,55851	||	Capacity Mean 2: 16,83544
+Capacity Sensor 1: 32,55390	||	Capacity Sensor 2: 16,83388
+-------------------------------------------------------------------------
+Nov 17, 2017 2:30:33 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,52598		Y:0,50656	Z:0,77879	||	A:99,57821	B:43,65451	C:-166,99478
+Transformation 2:  X:0,52746		Y:0,44770	Z:0,58799	||	A:-92,61758	B:-1,16148	C:-1,15507
+Distance between Trans1 and Trans2: 0,2
+Capacity Mean 1: 32,55750	||	Capacity Mean 2: 16,83003
+Capacity Sensor 1: 32,55608	||	Capacity Sensor 2: 16,82168
+-------------------------------------------------------------------------
+Nov 17, 2017 2:30:39 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,54709		Y:0,38722	Z:0,77746	||	A:119,33938	B:30,07071	C:-159,07751
+Transformation 2:  X:0,52732		Y:0,44758	Z:0,58807	||	A:-92,70358	B:-1,15662	C:-1,07455
+Distance between Trans1 and Trans2: 0,2
+Capacity Mean 1: 32,55735	||	Capacity Mean 2: 16,82729
+Capacity Sensor 1: 32,55641	||	Capacity Sensor 2: 16,81938
+-------------------------------------------------------------------------
+Nov 17, 2017 2:24:28 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,77471		Y:0,45583	Z:0,74815	||	A:36,37049	B:65,51902	C:-172,22953
+Transformation 2:  X:0,52733		Y:0,44763	Z:0,58833	||	A:-92,68670	B:-1,15583	C:-1,12716
+Distance between Trans1 and Trans2: 0,295
+Capacity Mean 1: ?	||	Capacity Mean 2: ?
+Capacity Sensor 1: 32,55438	||	Capacity Sensor 2: 16,81897
+-------------------------------------------------------------------------
+Nov 17, 2017 2:24:32 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,70191		Y:0,63695	Z:0,73406	||	A:78,06557	B:61,99768	C:-164,97164
+Transformation 2:  X:0,52726		Y:0,44774	Z:0,58824	||	A:-92,72849	B:-1,17322	C:-1,13064
+Distance between Trans1 and Trans2: 0,296
+Capacity Mean 1: ?	||	Capacity Mean 2: ?
+Capacity Sensor 1: 32,55766	||	Capacity Sensor 2: 16,81034
+-------------------------------------------------------------------------
+Nov 17, 2017 2:24:37 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,50790		Y:0,70726	Z:0,73347	||	A:99,75695	B:64,65766	C:-170,97121
+Transformation 2:  X:0,52732		Y:0,44761	Z:0,58837	||	A:-92,69642	B:-1,15142	C:-1,09108
+Distance between Trans1 and Trans2: 0,298
+Capacity Mean 1: ?	||	Capacity Mean 2: ?
+Capacity Sensor 1: 32,55759	||	Capacity Sensor 2: 16,80675
+-------------------------------------------------------------------------
+Nov 17, 2017 2:24:41 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,39943		Y:0,66571	Z:0,74817	||	A:143,80368	B:61,66733	C:-167,20904
+Transformation 2:  X:0,52751		Y:0,44771	Z:0,58831	||	A:-92,71292	B:-1,17120	C:-1,11203
+Distance between Trans1 and Trans2: 0,299
+Capacity Mean 1: ?	||	Capacity Mean 2: ?
+Capacity Sensor 1: 32,55796	||	Capacity Sensor 2: 16,80472
+-------------------------------------------------------------------------
+Nov 17, 2017 2:24:45 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,38000		Y:0,49300	Z:0,72220	||	A:168,27168	B:62,42187	C:-176,62275
+Transformation 2:  X:0,52723		Y:0,44751	Z:0,58840	||	A:-92,69548	B:-1,08437	C:-1,04951
+Distance between Trans1 and Trans2: 0,204
+Capacity Mean 1: ?	||	Capacity Mean 2: ?
+Capacity Sensor 1: 32,55804	||	Capacity Sensor 2: 16,80261
+-------------------------------------------------------------------------
+Nov 17, 2017 2:24:49 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,34259		Y:0,32410	Z:0,72706	||	A:-149,61066	B:61,86948	C:-174,06422
+Transformation 2:  X:0,52735		Y:0,44754	Z:0,58841	||	A:-92,70648	B:-1,12779	C:-1,08052
+Distance between Trans1 and Trans2: 0,262
+Capacity Mean 1: ?	||	Capacity Mean 2: ?
+Capacity Sensor 1: 32,55610	||	Capacity Sensor 2: 16,79833
+-------------------------------------------------------------------------
+Nov 17, 2017 2:24:53 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,44071		Y:0,22765	Z:0,76363	||	A:-120,71860	B:64,78588	C:-171,82406
+Transformation 2:  X:0,52731		Y:0,44759	Z:0,58834	||	A:-92,70077	B:-1,15758	C:-1,09882
+Distance between Trans1 and Trans2: 0,294
+Capacity Mean 1: 32,56003	||	Capacity Mean 2: 16,80714
+Capacity Sensor 1: 32,55674	||	Capacity Sensor 2: 16,80185
+-------------------------------------------------------------------------
+Nov 17, 2017 2:24:57 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,54647		Y:0,24256	Z:0,72012	||	A:-83,21692	B:61,31908	C:-167,66113
+Transformation 2:  X:0,52730		Y:0,44758	Z:0,58834	||	A:-92,69874	B:-1,15514	C:-1,10046
+Distance between Trans1 and Trans2: 0,244
+Capacity Mean 1: 32,55844	||	Capacity Mean 2: 16,80889
+Capacity Sensor 1: 32,55665	||	Capacity Sensor 2: 16,80498
+-------------------------------------------------------------------------
+Nov 17, 2017 2:25:02 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,63632		Y:0,24832	Z:0,78162	||	A:-51,39107	B:64,71510	C:-165,72782
+Transformation 2:  X:0,52730		Y:0,44760	Z:0,58835	||	A:-92,69962	B:-1,14675	C:-1,08514
+Distance between Trans1 and Trans2: 0,298
+Capacity Mean 1: 32,55776	||	Capacity Mean 2: 16,80826
+Capacity Sensor 1: 32,55462	||	Capacity Sensor 2: 16,80356
+-------------------------------------------------------------------------
+Nov 17, 2017 2:25:08 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,75740		Y:0,40626	Z:0,77234	||	A:-0,34800	B:65,94423	C:-160,81478
+Transformation 2:  X:0,52721		Y:0,44750	Z:0,58840	||	A:-92,68295	B:-1,18099	C:-1,04651
+Distance between Trans1 and Trans2: 0,298
+Capacity Mean 1: 32,55693	||	Capacity Mean 2: 16,80655
+Capacity Sensor 1: 32,55489	||	Capacity Sensor 2: 16,80269
+-------------------------------------------------------------------------
+Nov 17, 2017 2:25:12 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,66568		Y:0,53632	Z:0,83527	||	A:56,54055	B:56,35824	C:-158,73131
+Transformation 2:  X:0,52733		Y:0,44760	Z:0,58833	||	A:-92,69838	B:-1,14947	C:-1,08897
+Distance between Trans1 and Trans2: 0,297
+Capacity Mean 1: 32,55646	||	Capacity Mean 2: 16,80599
+Capacity Sensor 1: 32,55384	||	Capacity Sensor 2: 16,81024
+-------------------------------------------------------------------------
+Nov 17, 2017 2:25:16 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,51230		Y:0,58181	Z:0,82482	||	A:102,16725	B:55,16758	C:-157,29448
+Transformation 2:  X:0,52734		Y:0,44766	Z:0,58815	||	A:-92,70008	B:-1,15935	C:-1,15427
+Distance between Trans1 and Trans2: 0,272
+Capacity Mean 1: 32,55621	||	Capacity Mean 2: 16,80590
+Capacity Sensor 1: 32,55523	||	Capacity Sensor 2: 16,80554
+-------------------------------------------------------------------------
+Nov 17, 2017 2:25:20 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,44751		Y:0,57817	Z:0,84090	||	A:130,81032	B:58,29288	C:-164,02746
+Transformation 2:  X:0,52751		Y:0,44765	Z:0,58832	||	A:-92,62852	B:-1,20703	C:-1,16398
+Distance between Trans1 and Trans2: 0,295
+Capacity Mean 1: 32,55625	||	Capacity Mean 2: 16,80526
+Capacity Sensor 1: 32,55520	||	Capacity Sensor 2: 16,80053
+-------------------------------------------------------------------------
+Nov 17, 2017 2:25:25 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,38454		Y:0,44495	Z:0,84681	||	A:159,89236	B:59,49801	C:-178,15369
+Transformation 2:  X:0,52732		Y:0,44759	Z:0,58835	||	A:-92,68829	B:-1,13154	C:-1,10673
+Distance between Trans1 and Trans2: 0,295
+Capacity Mean 1: 32,55623	||	Capacity Mean 2: 16,80436
+Capacity Sensor 1: 32,55473	||	Capacity Sensor 2: 16,80354
+-------------------------------------------------------------------------
+Nov 17, 2017 2:25:29 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,40631		Y:0,39765	Z:0,78504	||	A:-130,65283	B:56,00541	C:-165,44346
+Transformation 2:  X:0,52755		Y:0,44735	Z:0,58836	||	A:-92,72963	B:-1,16015	C:-1,08712
+Distance between Trans1 and Trans2: 0,236
+Capacity Mean 1: 32,55608	||	Capacity Mean 2: 16,80396
+Capacity Sensor 1: 32,55571	||	Capacity Sensor 2: 16,79941
+-------------------------------------------------------------------------
+Nov 17, 2017 2:25:33 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,51392		Y:0,34175	Z:0,79335	||	A:-94,12470	B:56,96263	C:-171,95105
+Transformation 2:  X:0,52730		Y:0,44759	Z:0,58831	||	A:-92,70149	B:-1,15030	C:-1,08315
+Distance between Trans1 and Trans2: 0,231
+Capacity Mean 1: 32,55580	||	Capacity Mean 2: 16,80361
+Capacity Sensor 1: 32,55725	||	Capacity Sensor 2: 16,80321
+-------------------------------------------------------------------------
+Nov 17, 2017 2:25:38 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,56941		Y:0,43735	Z:0,88462	||	A:-146,54681	B:51,92871	C:-168,97038
+Transformation 2:  X:0,52731		Y:0,44760	Z:0,58831	||	A:-92,69922	B:-1,15190	C:-1,08800
+Distance between Trans1 and Trans2: 0,299
+Capacity Mean 1: 32,55566	||	Capacity Mean 2: 16,80329
+Capacity Sensor 1: 32,55639	||	Capacity Sensor 2: 16,79928
+-------------------------------------------------------------------------
+Nov 17, 2017 2:21:10 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,84954		Y:0,38249	Z:0,80685	||	A:83,36930	B:27,78625	C:-115,89033
+Transformation 2:  X:0,52790		Y:0,44793	Z:0,58851	||	A:-92,61454	B:-1,36954	C:-1,40886
+Distance between Trans1 and Trans2: 0,394
+Capacity Mean 1: 32,55863	||	Capacity Mean 2: 16,90429
+Capacity Sensor 1: 32,56235	||	Capacity Sensor 2: 16,88107
+-------------------------------------------------------------------------
+Nov 17, 2017 2:21:14 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,64825		Y:0,59211	Z:0,78880	||	A:96,51353	B:21,49963	C:-119,23339
+Transformation 2:  X:0,52789		Y:0,44791	Z:0,58856	||	A:-92,62677	B:-1,40828	C:-1,44532
+Distance between Trans1 and Trans2: 0,275
+Capacity Mean 1: 32,55909	||	Capacity Mean 2: 16,90158
+Capacity Sensor 1: 32,56358	||	Capacity Sensor 2: 16,87387
+-------------------------------------------------------------------------
+Nov 17, 2017 2:21:20 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,67428		Y:0,74166	Z:0,80486	||	A:129,38611	B:38,34336	C:-128,60917
+Transformation 2:  X:0,52791		Y:0,44792	Z:0,58850	||	A:-92,61841	B:-1,38203	C:-1,39748
+Distance between Trans1 and Trans2: 0,393
+Capacity Mean 1: 32,55975	||	Capacity Mean 2: 16,89756
+Capacity Sensor 1: 32,56475	||	Capacity Sensor 2: 16,85786
+-------------------------------------------------------------------------
+Nov 17, 2017 2:21:25 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,41662		Y:0,77722	Z:0,77265	||	A:160,35208	B:44,19304	C:-136,78776
+Transformation 2:  X:0,52788		Y:0,44795	Z:0,58888	||	A:-92,60606	B:-1,19739	C:-1,40166
+Distance between Trans1 and Trans2: 0,393
+Capacity Mean 1: 32,56050	||	Capacity Mean 2: 16,89213
+Capacity Sensor 1: 32,56542	||	Capacity Sensor 2: 16,85603
+-------------------------------------------------------------------------
+Nov 17, 2017 2:21:29 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,22522		Y:0,58554	Z:0,80048	||	A:-163,93255	B:52,22258	C:-144,51488
+Transformation 2:  X:0,52789		Y:0,44793	Z:0,58855	||	A:-92,59507	B:-1,36544	C:-1,44846
+Distance between Trans1 and Trans2: 0,394
+Capacity Mean 1: 32,56088	||	Capacity Mean 2: 16,88661
+Capacity Sensor 1: 32,56382	||	Capacity Sensor 2: 16,85265
+-------------------------------------------------------------------------
+Nov 17, 2017 2:21:33 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,29085		Y:0,35650	Z:0,75604	||	A:-143,41469	B:51,45969	C:-152,10867
+Transformation 2:  X:0,52792		Y:0,44791	Z:0,58861	||	A:-92,61675	B:-1,36238	C:-1,42385
+Distance between Trans1 and Trans2: 0,304
+Capacity Mean 1: 32,56111	||	Capacity Mean 2: 16,88159
+Capacity Sensor 1: 32,56417	||	Capacity Sensor 2: 16,84357
+-------------------------------------------------------------------------
+Nov 17, 2017 2:21:37 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,32701		Y:0,27010	Z:0,81251	||	A:-119,53335	B:55,63601	C:-156,12252
+Transformation 2:  X:0,52803		Y:0,44780	Z:0,58872	||	A:-92,61228	B:-1,35284	C:-1,41963
+Distance between Trans1 and Trans2: 0,349
+Capacity Mean 1: 32,56157	||	Capacity Mean 2: 16,87679
+Capacity Sensor 1: 32,56271	||	Capacity Sensor 2: 16,83564
+-------------------------------------------------------------------------
+Nov 17, 2017 2:21:41 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,39473		Y:0,14552	Z:0,80380	||	A:-103,13277	B:57,69773	C:-163,38155
+Transformation 2:  X:0,52769		Y:0,44775	Z:0,58850	||	A:-92,64043	B:-1,22808	C:-1,20930
+Distance between Trans1 and Trans2: 0,394
+Capacity Mean 1: 32,56211	||	Capacity Mean 2: 16,87188
+Capacity Sensor 1: 32,56259	||	Capacity Sensor 2: 16,82399
+-------------------------------------------------------------------------
+Nov 17, 2017 2:21:45 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,58283		Y:0,17691	Z:0,78482	||	A:-75,75259	B:58,92660	C:-164,07065
+Transformation 2:  X:0,52796		Y:0,44804	Z:0,58862	||	A:-92,54515	B:-1,36460	C:-1,29579
+Distance between Trans1 and Trans2: 0,339
+Capacity Mean 1: 32,56255	||	Capacity Mean 2: 16,86612
+Capacity Sensor 1: 32,55983	||	Capacity Sensor 2: 16,82282
+-------------------------------------------------------------------------
+Nov 17, 2017 2:21:49 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,71414		Y:0,17483	Z:0,81024	||	A:-47,43544	B:61,10077	C:-157,07513
+Transformation 2:  X:0,52782		Y:0,44783	Z:0,58850	||	A:-92,61810	B:-1,42080	C:-1,45736
+Distance between Trans1 and Trans2: 0,398
+Capacity Mean 1: 32,56276	||	Capacity Mean 2: 16,86032
+Capacity Sensor 1: 32,56058	||	Capacity Sensor 2: 16,82171
+-------------------------------------------------------------------------
+Nov 17, 2017 2:22:00 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,85015		Y:0,41057	Z:0,81554	||	A:13,37662	B:60,73407	C:-159,40469
+Transformation 2:  X:0,52731		Y:0,44763	Z:0,58853	||	A:-92,69624	B:-1,15597	C:-1,10362
+Distance between Trans1 and Trans2: 0,396
+Capacity Mean 1: 32,56275	||	Capacity Mean 2: 16,84642
+Capacity Sensor 1: 32,55991	||	Capacity Sensor 2: 16,82320
+-------------------------------------------------------------------------
+Nov 17, 2017 2:22:04 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,83794		Y:0,50139	Z:0,82818	||	A:37,74180	B:57,69026	C:-150,83463
+Transformation 2:  X:0,52731		Y:0,44763	Z:0,58853	||	A:-92,69518	B:-1,15606	C:-1,10611
+Distance between Trans1 and Trans2: 0,396
+Capacity Mean 1: 32,56248	||	Capacity Mean 2: 16,84201
+Capacity Sensor 1: 32,55772	||	Capacity Sensor 2: 16,81832
+-------------------------------------------------------------------------
+Nov 17, 2017 2:22:08 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,66896		Y:0,59590	Z:0,93017	||	A:82,09843	B:51,36087	C:-156,18549
+Transformation 2:  X:0,52724		Y:0,44778	Z:0,58840	||	A:-92,72493	B:-1,18440	C:-1,15249
+Distance between Trans1 and Trans2: 0,399
+Capacity Mean 1: 32,56212	||	Capacity Mean 2: 16,83735
+Capacity Sensor 1: 32,55618	||	Capacity Sensor 2: 16,80904
+-------------------------------------------------------------------------
+Nov 17, 2017 2:22:13 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,49991		Y:0,55954	Z:0,96900	||	A:131,95126	B:44,88795	C:-164,37079
+Transformation 2:  X:0,52751		Y:0,44771	Z:0,58847	||	A:-92,70804	B:-1,16485	C:-1,12554
+Distance between Trans1 and Trans2: 0,398
+Capacity Mean 1: 32,56164	||	Capacity Mean 2: 16,83281
+Capacity Sensor 1: 32,55636	||	Capacity Sensor 2: 16,81567
+-------------------------------------------------------------------------
+Nov 17, 2017 2:22:17 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,41567		Y:0,50687	Z:0,96529	||	A:177,72847	B:46,93734	C:-171,30724
+Transformation 2:  X:0,52724		Y:0,44754	Z:0,58854	||	A:-92,69583	B:-1,09366	C:-1,06797
+Distance between Trans1 and Trans2: 0,397
+Capacity Mean 1: 32,56104	||	Capacity Mean 2: 16,82786
+Capacity Sensor 1: 32,55633	||	Capacity Sensor 2: 16,80883
+-------------------------------------------------------------------------
+Nov 17, 2017 2:22:22 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,40490		Y:0,37200	Z:0,95978	||	A:-141,17739	B:49,34585	C:-177,80083
+Transformation 2:  X:0,52731		Y:0,44761	Z:0,58851	||	A:-92,69433	B:-1,15239	C:-1,09662
+Distance between Trans1 and Trans2: 0,398
+Capacity Mean 1: 32,56032	||	Capacity Mean 2: 16,82371
+Capacity Sensor 1: 32,55595	||	Capacity Sensor 2: 16,80814
+-------------------------------------------------------------------------
+Nov 17, 2017 2:22:27 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,53706		Y:0,30521	Z:0,96158	||	A:-97,05684	B:49,67678	C:178,54928
+Transformation 2:  X:0,52729		Y:0,44761	Z:0,58851	||	A:-92,69567	B:-1,15213	C:-1,10018
+Distance between Trans1 and Trans2: 0,399
+Capacity Mean 1: 32,55964	||	Capacity Mean 2: 16,81952
+Capacity Sensor 1: 32,55617	||	Capacity Sensor 2: 16,80324
+-------------------------------------------------------------------------
+Nov 17, 2017 2:22:31 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,66338		Y:0,34463	Z:0,88396	||	A:-56,61999	B:48,68633	C:-179,12237
+Transformation 2:  X:0,52790		Y:0,44791	Z:0,58843	||	A:-92,61535	B:-1,37179	C:-1,39606
+Distance between Trans1 and Trans2: 0,341
+Capacity Mean 1: 32,55918	||	Capacity Mean 2: 16,81669
+Capacity Sensor 1: 32,55542	||	Capacity Sensor 2: 16,80420
+-------------------------------------------------------------------------
+Nov 17, 2017 2:22:38 PM de.isse.robotics.ViconAccess logDependingOnDistance
+SCHWERWIEGEND: 
+Transformation 1:  X:0,60155		Y:0,47693	Z:0,97714	||	A:-158,46970	B:39,32969	C:-177,47632
+Transformation 2:  X:0,52730		Y:0,44762	Z:0,58849	||	A:-92,69856	B:-1,15012	C:-1,09780
+Distance between Trans1 and Trans2: 0,397
+Capacity Mean 1: 32,55837	||	Capacity Mean 2: 16,81255
+Capacity Sensor 1: 32,55566	||	Capacity Sensor 2: 16,80265
+-------------------------------------------------------------------------

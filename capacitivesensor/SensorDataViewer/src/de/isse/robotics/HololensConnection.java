@@ -20,8 +20,8 @@ import java.util.ArrayList;
 
 public class HololensConnection {
 
-	private String standardAddress = "224.0.0.3";
-	private final int multicastPort = 8888;
+	private String standardAddress = "230.1.1.1";
+	private final int multicastPort = 12345;
 
 	public void SendOverMulticast(String message) throws IOException, InterruptedException {
 		// Get the address that we are going to connect to.
@@ -89,6 +89,7 @@ public class HololensConnection {
 
 				DatagramPacket msgPacket = new DatagramPacket(buf, buf.length);
 
+				System.out.println("Waiting for message");
 				clientSocket.receive(msgPacket);
 
 				String msg = new String(buf, 0, buf.length);
