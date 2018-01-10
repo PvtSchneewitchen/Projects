@@ -8,12 +8,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -2067402452, guid: bab6fa851cf5a1a4bba3cec5f191cb8e, type: 3}
+  m_Script: {fileID: -2067402452, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
     vuforiaLicenseKey: 
-    ufoLicenseKey: QWFSTkRwSC8vLy8vQUFBQUtHWHNBS1ZqRVUrbHJKT1c3UWVoVjJWanEvZWt0ZFN0T1Y0SjBTZUVoRXI1K3BQZWxaZ1Q3Q3lxNUpZZTNub1JvclRlM1JQM3FKb00zUXhLYkhBWTAzZUlpTDFvOG1LdENKclBCa3NISXIyK0w4ZVFxTURVMmNwOUxab1daeTNNWERVcFRUYUJjRWo0K1M0N0MrZTA2MmQyRG54bFNkSXpqWFBLajVsV0JXbDhlVko3eStrYklhMXJxeTBkV3lBTXdibUI3ZWtLYTI0YzlsdXZ0ZVh3OHQ4cjcwamY2eHV2UHBoY2kzUmlwTW04eWFkb2hGVTlkSk9wd1JnMmhiWm00WS9YY04wNDhwNDV3SC9GSHI1Z0k5ZTVSTHU3QlpSdTFOakZQT2RCRVUwOHp4RzZDdzlOekxoeTJvb2NDODlpUk1CbGJWSlRCTG1oVi9UcjVhRlFTdHViYkxPa21OQmoyaVZKNVBJbmhtNng=
+    ufoLicenseKey: QVV3Nmo3SC8vLy8vQUFBQUtHV3BxMmZwd0VLZHZ1Wk9PN3NXSlQ1bWxURVNXK2R5Z0NYZkdXaWN2dHh3MTRiWWhSeEVFSHVxUVhsYW1EaHRrdUt5b25Ld3F4UWM2N28xZFVPam0rNlAzWERpa28rQ0tZNXZrQjF1U1o1MFZULzl2Ky9tRGd2YWdHTzJDTHpGL1RQaUpnWmNJY3BJMndRRFd0L0JDR2Yvb0lrZFUxS3U2U1pnNi9IOFNad3VWc1lnbWFDeFpEc0ZURi9HYmh5bVNuMW9mQVVBcW1UNEQ2YU96b2VVaHVOK3Z5UFc1RVAxTW4wSWxvUlFnWklBNCswVlVra1ZoN2JUVU9hcG5QaitzU3J1b3kvNDVXSjFSQWg0SHBuVGpiTjNDSFc1YlJEdlZlcHVQRFZxZzM2UkNJZzhjSDIxbEJva3ZUL2FqcWVPV3VJN0M1ODVaRlV3dHdJWmFhYm9zQXVrd1hZVkpQRHZGbU1VaXp0cXRYcXk=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
     maxSimultaneousImageTargets: 1
@@ -45,11 +45,9 @@ MonoBehaviour:
   databaseLoad:
     dataSetsToLoad:
     - VuforiaMars_Images
-    - VuforiaMars_Object_OT
     - VuforiaMars_VuMark
     dataSetsToActivate:
     - VuforiaMars_Images
-    - VuforiaMars_Object_OT
     - VuforiaMars_VuMark
   videoBackground:
     clippingMode: 0
@@ -58,11 +56,6 @@ MonoBehaviour:
       type: 0}
     matteShader: {fileID: 15310, guid: 0000000000000000f000000000000000, type: 0}
     videoBackgroundEnabled: 1
-  smartTerrainTracker:
-    autoInitTracker: 0
-    autoStartTracker: 0
-    autoInitBuilder: 0
-    sceneUnitsToMillimeter: 0
   deviceTracker:
     autoInitTracker: 0
     autoStartTracker: 0
@@ -71,6 +64,9 @@ MonoBehaviour:
     modelCorrectionMode: 0
     modelTransformEnabled: 0
     modelTransform: {x: 0, y: 0.1, z: -0.1}
+  smartTerrain:
+    autoInitTracker: 0
+    autoStartTracker: 0
   webcam:
     deviceNameSetInEditor: 
     flipHorizontally: 0

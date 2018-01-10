@@ -30,34 +30,34 @@ public class SensorViewer {
 		final InetAddress group = InetAddress.getByName(address);
 
 		// sending thread
-		new Thread(new Runnable() {
-			@Override
-			public void run() {
-				try {
-					@SuppressWarnings("resource")
-					MulticastSocket socket = new MulticastSocket(port);
-					socket.setInterface(InetAddress.getLocalHost());
-					socket.joinGroup(group);
-
-					while (true) {
-						// either
-						SimulateCapacities();
-						//or
-						// capacity1 = svwInstance.getMean()[1];
-						// capacity2 = svwInstance.getMean()[2];
-
-						String message = String.valueOf(capacity1) + " " + String.valueOf(capacity2);
-						byte[] bt = message.getBytes();
-
-						socket.send(new DatagramPacket(bt, bt.length, group, port));
-						System.out.println("sent: " + new String(bt));
-						Thread.sleep(1 * 1000);
-					}
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		}).start();
+//		new Thread(new Runnable() {
+//			@Override
+//			public void run() {
+//				try {
+//					@SuppressWarnings("resource")
+//					MulticastSocket socket = new MulticastSocket(port);
+//					socket.setInterface(InetAddress.getLocalHost());
+//					socket.joinGroup(group);
+//
+//					while (true) {
+//						// either
+//						SimulateCapacities();
+//						//or
+//						// capacity1 = svwInstance.getMean()[1];
+//						// capacity2 = svwInstance.getMean()[2];
+//
+//						String message = String.valueOf(capacity1) + " " + String.valueOf(capacity2);
+//						byte[] bt = message.getBytes();
+//
+//						socket.send(new DatagramPacket(bt, bt.length, group, port));
+//						System.out.println("sent: " + new String(bt));
+//						Thread.sleep(1 * 1000);
+//					}
+//				} catch (Exception e) {
+//					e.printStackTrace();
+//				}
+//			}
+//		}).start();
 
 		// listening thread
 		new Thread(new Runnable() {
