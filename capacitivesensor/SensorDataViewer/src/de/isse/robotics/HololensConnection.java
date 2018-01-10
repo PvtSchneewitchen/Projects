@@ -20,111 +20,45 @@ import java.util.ArrayList;
 
 public class HololensConnection {
 
-	private String standardAddress = "230.1.1.1";
-	private final int multicastPort = 12345;
-
-	public void SendOverMulticast(String message) throws IOException, InterruptedException {
-		// Get the address that we are going to connect to.
-
-		InetAddress addr = InetAddress.getByName(standardAddress);
-
-		// Open a new DatagramSocket, which will be used to send the data.
-
-		try (DatagramSocket serverSocket = new DatagramSocket()) {
-
-			for (int i = 0; i < 5; i++) {
-
-				String msg = "Sent message no " + i;
-
-				// Create a packet that will contain the data
-
-				// (in the form of bytes) and send it.
-
-				DatagramPacket msgPacket = new DatagramPacket(msg.getBytes(),
-
-						msg.getBytes().length, addr, multicastPort);
-
-				serverSocket.send(msgPacket);
-
-				System.out.println("Server sent packet with msg: " + msg);
-
-				Thread.sleep(500);
-
-			}
-
-		} catch (IOException ex) {
-
-			ex.printStackTrace();
-
-		}
-
-	}
+	private String standardAddress = "239.255.255.250";
+	private final int multicastPort = 1900;
 
 	public void listen() throws IOException {
-		// Get the address that we are going to connect to.
+		InetAddress multicastAddress = InetAddress.getByName(standardAddress);
+		MulticastSocket socket = new MulticastSocket(multicastPort);
+		socket.setReuseAddress(true);
+		socket.setSoTimeout(1500);
+		socket.joinGroup(multicastAddress);
 
-		InetAddress address = InetAddress.getByName(standardAddress);
+		byte[] rxbuf = new byte[8192];
+		DatagramPacket packet = new DatagramPacket(rxbuf, rxbuf.length);
+		socket.receive(packet);
 
-		// Create a buffer of bytes, which will be used to store
-
-		// the incoming bytes containing the information from the server.
-
-		// Since the message is small here, 256 bytes should be enough.
-
-		byte[] buf = new byte[256];
-
-		// Create a new Multicast socket (that will allow other sockets/programs
-
-		// to join it as well.
-
-		try (MulticastSocket clientSocket = new MulticastSocket(multicastPort)) {
-
-			// Joint the Multicast group.
-
-			clientSocket.joinGroup(address);
-
-			while (true) {
-
-				// Receive the information and print it.
-
-				DatagramPacket msgPacket = new DatagramPacket(buf, buf.length);
-
-				System.out.println("Waiting for message");
-				clientSocket.receive(msgPacket);
-
-				String msg = new String(buf, 0, buf.length);
-
-				System.out.println("Socket 1 received msg: " + msg);
-
-			}
-
-		} catch (IOException ex) {
-
-			ex.printStackTrace();
-
-		}
-
+		System.out.println("Message Content: " + new String(packet.getData()));
 	}
 
-	public void multicast() throws IOException {
+	public void multicast(String message) throws IOException {
 		try {
-			InetAddress multicastAddress = InetAddress.getByName("239.255.255.250");
-			// multicast address for SSDP
-			final int port = 1900; // standard port for SSDP
-			MulticastSocket socket = new MulticastSocket(port);
+			InetAddress multicastAddress = InetAddress.getByName(standardAddress);
+			MulticastSocket socket = new MulticastSocket(multicastPort);
 			socket.setReuseAddress(true);
-			socket.setSoTimeout(150);
+			socket.setSoTimeout(1500);
 			socket.joinGroup(multicastAddress);
 			// send discover
-			byte[] txbuf = "TestTestTest".getBytes("UTF-8");
-			DatagramPacket hi = new DatagramPacket(txbuf, txbuf.length, multicastAddress, port);
+			byte[] txbuf = message.getBytes();
+			DatagramPacket hi = new DatagramPacket(txbuf, txbuf.length, multicastAddress, multicastPort);
 			socket.send(hi);
 			System.out.println("SSDP discover sent");
 			do {
 				byte[] rxbuf = new byte[8192];
 				DatagramPacket packet = new DatagramPacket(rxbuf, rxbuf.length);
 				socket.receive(packet);
-				dumpPacket(packet);
+
+				System.out.println("Message Content: " + new String(packet.getData()));
+				if (new String(packet.getData()).equals(message)) {
+					System.out.println("Right message content");
+				}
+				// dumpPacket(packet);
 			} while (true); // should leave loop by SocketTimeoutException
 		} catch (SocketTimeoutException e) {
 			System.out.println("Timeout");

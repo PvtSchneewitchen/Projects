@@ -32,8 +32,8 @@ public class SensorViewer {
 			String message = String.valueOf(capacity1) + " " + String.valueOf(capacity2);
 
 			 //hlc.SendOverMulticast(message);
-			 hlc.listen();
-			//hlc.multicast();
+			 //hlc.listen();
+			hlc.multicast(message);
 		}
 
 		// if(sendDataToHololens)
