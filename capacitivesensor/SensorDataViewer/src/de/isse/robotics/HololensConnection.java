@@ -17,6 +17,7 @@ import java.net.UnknownHostException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class HololensConnection {
 
@@ -87,35 +88,48 @@ public class HololensConnection {
 			+ "MX: 3\r\n" + "MAN: `ssdp:discover`\r\n".replace('`', '"') + "HOST: 239.255.255.250:1900\r\n\r\n";
 
 	public void listenTest() throws UnknownHostException, IOException {
-		int port = 5000;
-		String group = "225.4.5.6";
-		MulticastSocket s = new MulticastSocket(port);
-		s.joinGroup(InetAddress.getByName(group));
-
-		byte[] buf = new byte[1024];
-		DatagramPacket pack = new DatagramPacket(buf, buf.length);
-		s.receive(pack);
-
-		System.out.println("Received data from: " + pack.getAddress().toString() + ":" + pack.getPort()
-				+ " with length: " + pack.getLength());
-		System.out.write(pack.getData(), 0, pack.getLength());
-		System.out.println();
-
-		s.leaveGroup(InetAddress.getByName(group));
-		s.close();
+		InetAddress inetRemoteAddr = InetAddress.getByName("224.0.0.5"); 
+		 
+		  DatagramPacket recvPack = new DatagramPacket(new byte[1024], 1024); 
+		 
+		  MulticastSocket server = new MulticastSocket(8888); 
+		 
+		  /* 
+		   *  If it is to send datagram packets , You cannot join multicast groups ;  If the datagram packet is received , Multicast group must be added ;  Here is the receive datagram package , So you must join the multicast group ; 
+		   */ 
+		  server.joinGroup(inetRemoteAddr); 
+		 
+		  System.out.println("---------------------------------"); 
+		  System.out.println("Server current start......"); 
+		  System.out.println("---------------------------------"); 
+		 
+		  while (true) 
+		  { 
+		   server.receive(recvPack); 
+		 
+		   byte[] recvByte = Arrays.copyOfRange(recvPack.getData(), 0, 
+		     recvPack.getLength()); 
+		 
+		   System.out.println("Server receive msg:" + new String(recvByte)); 
+		  }
 	}
 
 	public void sendTest(String message) throws IOException {
-		int port = 5000;
-		String group = "225.4.5.6";
-		int ttl = 1;
-		MulticastSocket s = new MulticastSocket();
+		int port = 8888; 
+		  byte[] msg = message.getBytes(); 
+		 
+		  InetAddress inetRemoteAddr = InetAddress.getByName("224.0.0.5"); 
 
-		byte[] buf = message.getBytes();
-		DatagramPacket pack = new DatagramPacket(buf, buf.length, InetAddress.getByName(group), port);
-		s.send(pack);
-		System.out.println("Message: " + new String(buf) + " sent");
-		s.close();
+		  MulticastSocket client = new MulticastSocket(); 
+		 
+		  DatagramPacket sendPack = new DatagramPacket(msg, msg.length, 
+		    inetRemoteAddr, port); 
+		 
+		  client.send(sendPack); 
+		 
+		  System.out.println("Client send msg complete"); 
+		 
+		  client.close(); 
 	}
 
 	// static DatagramSocket serverSocket;
