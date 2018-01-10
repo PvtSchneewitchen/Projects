@@ -33,7 +33,9 @@ public class SensorViewer {
 
 			 //hlc.SendOverMulticast(message);
 			 //hlc.listen();
-			hlc.multicast(message);
+			//hlc.multicast(message);
+			hlc.sendTest(message);
+			hlc.listenTest();
 		}
 
 		// if(sendDataToHololens)

@@ -27,7 +27,7 @@ public class HololensConnection {
 		InetAddress multicastAddress = InetAddress.getByName(standardAddress);
 		MulticastSocket socket = new MulticastSocket(multicastPort);
 		socket.setReuseAddress(true);
-		socket.setSoTimeout(1500);
+		// socket.setSoTimeout(1500);
 		socket.joinGroup(multicastAddress);
 
 		byte[] rxbuf = new byte[8192];
@@ -85,6 +85,38 @@ public class HololensConnection {
 
 	private final static String DISCOVER_MESSAGE_ROOTDEVICE = "M-SEARCH * HTTP/1.1\r\n" + "ST: upnp:rootdevice\r\n"
 			+ "MX: 3\r\n" + "MAN: `ssdp:discover`\r\n".replace('`', '"') + "HOST: 239.255.255.250:1900\r\n\r\n";
+
+	public void listenTest() throws UnknownHostException, IOException {
+		int port = 5000;
+		String group = "225.4.5.6";
+		MulticastSocket s = new MulticastSocket(port);
+		s.joinGroup(InetAddress.getByName(group));
+
+		byte[] buf = new byte[1024];
+		DatagramPacket pack = new DatagramPacket(buf, buf.length);
+		s.receive(pack);
+
+		System.out.println("Received data from: " + pack.getAddress().toString() + ":" + pack.getPort()
+				+ " with length: " + pack.getLength());
+		System.out.write(pack.getData(), 0, pack.getLength());
+		System.out.println();
+
+		s.leaveGroup(InetAddress.getByName(group));
+		s.close();
+	}
+
+	public void sendTest(String message) throws IOException {
+		int port = 5000;
+		String group = "225.4.5.6";
+		int ttl = 1;
+		MulticastSocket s = new MulticastSocket();
+
+		byte[] buf = message.getBytes();
+		DatagramPacket pack = new DatagramPacket(buf, buf.length, InetAddress.getByName(group), port);
+		s.send(pack);
+		System.out.println("Message: " + new String(buf) + " sent");
+		s.close();
+	}
 
 	// static DatagramSocket serverSocket;
 	// static DatagramPacket message;
