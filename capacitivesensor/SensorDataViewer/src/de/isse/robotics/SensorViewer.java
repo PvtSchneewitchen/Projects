@@ -12,13 +12,13 @@ public class SensorViewer {
 	
 	public static void main(String[] args) throws Exception {
 		HololensConnection hlc = new HololensConnection();
-		SensorModel model = new SensorModel();
-		SensorViewerWindow svwInstance = new SensorViewerWindow(model);
-		svwInstance.setVisible(true);
+//		SensorModel model = new SensorModel();
+//		SensorViewerWindow svwInstance = new SensorViewerWindow(model);
+//		svwInstance.setVisible(true);
 		
-		ViconAccess viconClass = new ViconAccess();
-		viconClass.startVicon();
-		viconClass.startLogger();
+//		ViconAccess viconClass = new ViconAccess();
+//		viconClass.startVicon();
+//		viconClass.startLogger();S
 		
 		double capacity1;
 		double capacity2;
@@ -33,6 +33,7 @@ public class SensorViewer {
 			String message = String.valueOf(capacity1) + " " + String.valueOf(capacity2);
 			
 			hlc.SendOverMulticast(message);
+			hlc.listen();
 		}
 		
 //		if(sendDataToHololens)

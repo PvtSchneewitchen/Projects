@@ -5,6 +5,7 @@ import java.io.ObjectOutputStream;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
+import java.net.MulticastSocket;
 import java.net.UnknownHostException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
@@ -12,9 +13,9 @@ import java.util.ArrayList;
 
 public class HololensConnection{
 	
-	private DatagramSocket socket;
+	private MulticastSocket socket;
 	private InetAddress multicastAddress;
-    private byte[] buf;
+    private byte[] buf = new byte[256];
     
     
     private String standardAddress = "230.0.0.0";
@@ -22,15 +23,33 @@ public class HololensConnection{
 	
 	public void SendOverMulticast(String message) throws IOException
 	{
-		socket = new DatagramSocket();
-		multicastAddress = InetAddress.getByName(standardAddress);
+//		System.out.println("Try to send: " + message + " over port " + multicastPort);
 		buf = message.getBytes();
+		multicastAddress = InetAddress.getByName(standardAddress);
+		socket = new MulticastSocket(multicastPort);
+		socket.joinGroup(multicastAddress);
 		
 		DatagramPacket packet = new DatagramPacket(buf, buf.length, multicastAddress, multicastPort);
 		
 		socket.send(packet);
+//		System.out.println("message sent");
+		
 		socket.close();
 	}
+	
+	public void listen() throws IOException {
+		MulticastSocket s = new MulticastSocket(multicastPort);
+		InetAddress group = InetAddress.getByName(standardAddress);
+		s.joinGroup(group);
+		System.out.println("sdsdsd");
+		byte[] buffer = new byte [256];
+		DatagramPacket packet = new DatagramPacket(buffer, buffer.length);
+		s.receive(packet);
+		
+		System.out.println(new String(packet.getData()));
+	}
+	
+	
     
 //	static DatagramSocket serverSocket;
 //	static DatagramPacket message;
