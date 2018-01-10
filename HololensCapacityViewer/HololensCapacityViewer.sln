@@ -1,9 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HololensCapacityViewer", "HololensCapacityViewer.csproj", "{A296C0E7-771C-1AC8-AA24-473E3A3099E1}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HololensCapacityViewer", "Assembly-CSharp.csproj", "{65819D51-7596-AD86-760A-9498934FA89D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HololensCapacityViewer.Editor", "HololensCapacityViewer.Editor.csproj", "{1EFD20A2-F721-5209-0C57-B43D716D18CB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HololensCapacityViewer", "Assembly-CSharp-Editor.csproj", "{55874CBD-7CCB-42EA-FD50-D043261E9C5B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,16 +11,19 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A296C0E7-771C-1AC8-AA24-473E3A3099E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A296C0E7-771C-1AC8-AA24-473E3A3099E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A296C0E7-771C-1AC8-AA24-473E3A3099E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A296C0E7-771C-1AC8-AA24-473E3A3099E1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1EFD20A2-F721-5209-0C57-B43D716D18CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1EFD20A2-F721-5209-0C57-B43D716D18CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1EFD20A2-F721-5209-0C57-B43D716D18CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1EFD20A2-F721-5209-0C57-B43D716D18CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65819D51-7596-AD86-760A-9498934FA89D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65819D51-7596-AD86-760A-9498934FA89D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65819D51-7596-AD86-760A-9498934FA89D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65819D51-7596-AD86-760A-9498934FA89D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55874CBD-7CCB-42EA-FD50-D043261E9C5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55874CBD-7CCB-42EA-FD50-D043261E9C5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55874CBD-7CCB-42EA-FD50-D043261E9C5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55874CBD-7CCB-42EA-FD50-D043261E9C5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal

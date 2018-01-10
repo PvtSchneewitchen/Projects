@@ -1,19 +1,12 @@
 package de.isse.robotics;
 
-import java.awt.List;
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
-import java.util.Formatter;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Vector;
 import java.util.logging.FileHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
-
 import org.roboticsapi.core.world.Transformation;
 import org.roboticsapi.device.vicon.tracker.javarcc.devices.JMulticastVicon;
 import org.roboticsapi.device.vicon.tracker.javarcc.devices.JVicon;
