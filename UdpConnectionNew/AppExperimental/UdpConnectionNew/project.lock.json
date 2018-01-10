@@ -15774,20 +15774,25 @@
     "UAP,Version=v10.0.10240": []
   },
   "packageFolders": {
-    "C:\\Users\\Patrick\\.nuget\\packages\\": {}
+    "C:\\Users\\gruepazu\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\Patrick\\Documents\\GithubRepos\\Projects\\UdpConnectionNew\\AppExperimental\\UdpConnectionNew\\UdpConnectionNew.csproj",
+      "projectUniqueName": "C:\\Users\\gruepazu\\Documents\\Github\\Projects\\UdpConnectionNew\\AppExperimental\\UdpConnectionNew\\UdpConnectionNew.csproj",
       "projectName": "UdpConnectionNew",
-      "projectPath": "C:\\Users\\Patrick\\Documents\\GithubRepos\\Projects\\UdpConnectionNew\\AppExperimental\\UdpConnectionNew\\UdpConnectionNew.csproj",
-      "projectJsonPath": "C:\\Users\\Patrick\\Documents\\GithubRepos\\Projects\\UdpConnectionNew\\AppExperimental\\UdpConnectionNew\\project.json",
-      "packagesPath": "C:\\Users\\Patrick\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Patrick\\Documents\\GithubRepos\\Projects\\UdpConnectionNew\\AppExperimental\\UdpConnectionNew\\obj\\",
+      "projectPath": "C:\\Users\\gruepazu\\Documents\\Github\\Projects\\UdpConnectionNew\\AppExperimental\\UdpConnectionNew\\UdpConnectionNew.csproj",
+      "projectJsonPath": "C:\\Users\\gruepazu\\Documents\\Github\\Projects\\UdpConnectionNew\\AppExperimental\\UdpConnectionNew\\project.json",
+      "packagesPath": "C:\\Users\\gruepazu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gruepazu\\Documents\\Github\\Projects\\UdpConnectionNew\\AppExperimental\\UdpConnectionNew\\obj\\",
       "projectStyle": "ProjectJson",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Patrick\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\gruepazu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -15795,10 +15800,10 @@
       }
     },
     "dependencies": {
-      "Microsoft.ApplicationInsights": "1.0.0",
-      "Microsoft.ApplicationInsights.PersistenceChannel": "1.0.0",
-      "Microsoft.ApplicationInsights.WindowsApps": "1.0.0",
-      "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"
+      "Microsoft.ApplicationInsights": "[1.0.0, )",
+      "Microsoft.ApplicationInsights.PersistenceChannel": "[1.0.0, )",
+      "Microsoft.ApplicationInsights.WindowsApps": "[1.0.0, )",
+      "Microsoft.NETCore.UniversalWindowsPlatform": "[5.0.0, )"
     },
     "frameworks": {
       "uap10.0.10240": {}

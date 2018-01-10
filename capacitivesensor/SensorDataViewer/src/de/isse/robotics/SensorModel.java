@@ -14,7 +14,7 @@ public class SensorModel {
 		void valuesReceived(double[] values);
 	}
 
-	private List<Listener> listeners = new ArrayList<>();
+	private List<Listener> listeners = new ArrayList<Listener>();
 
 	public SensorModel() throws SerialPortException, InterruptedException {
 		String[] ports = jssc.SerialPortList.getPortNames();

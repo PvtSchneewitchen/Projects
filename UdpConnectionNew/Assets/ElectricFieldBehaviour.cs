@@ -8,9 +8,9 @@ using System.Dynamic;
 
 public class ElectricFieldBehaviour : MonoBehaviour
 {
-	private string sDirectoryPath = "C:\\Users\\Patrick\\Documents\\GithubRepos\\Projects\\capacitivesensor\\SensorDataViewer";
+	private string sDirectoryPath = "C:\\Users\\gruepazu\\Documents\\Github\\Projects\\capacitivesensor\\SensorDataViewer";
 	private string sFileNames = "log_distance_border_*.txt";
-	public static bool bShowField = false;
+	public static bool bShowField = true;
 
 	private int iFieldPointsToShow;
 	private ElectricalField eField;
