@@ -1,7 +1,10 @@
 package de.isse.robotics;
 
 import java.net.DatagramPacket;
+import java.net.InetAddress;
+import java.net.MulticastSocket;
 import java.sql.Time;
+import java.util.Arrays;
 
 //import jssc.SerialPortException;
 
@@ -11,32 +14,79 @@ public class SensorViewer {
 	private static DatagramPacket requestMessage;
 
 	public static void main(String[] args) throws Exception {
-		HololensConnection hlc = new HololensConnection();
-		// SensorModel model = new SensorModel();
-		// SensorViewerWindow svwInstance = new SensorViewerWindow(model);
-		// svwInstance.setVisible(true);
+//		HololensConnection hlc = new HololensConnection();
+//		// SensorModel model = new SensorModel();
+//		// SensorViewerWindow svwInstance = new SensorViewerWindow(model);
+//		// svwInstance.setVisible(true);
+//
+//		// ViconAccess viconClass = new ViconAccess();
+//		// viconClass.startVicon();
+//		// viconClass.startLogger();S
+//
+//		double capacity1;
+//		double capacity2;
+//
+//		while (true) {
+//			// capacity1 = svwInstance.getMean()[1];
+//			// capacity2 = svwInstance.getMean()[2];
+//			capacity1 = 1.234;
+//			capacity2 = 5.678;
+//
+//			String message = String.valueOf(capacity1) + " " + String.valueOf(capacity2);
+//
+//			 //hlc.SendOverMulticast(message);
+//			 //hlc.listen();
+//			//hlc.multicast(message);
+//			//(hlc.sendTest(message);
+//			hlc.listenTest();
+//		}
+		
+		
+		
+	    final InetAddress group = InetAddress.getByName("237.0.0.1");
+	    final int port = 9000;
 
-		// ViconAccess viconClass = new ViconAccess();
-		// viconClass.startVicon();
-		// viconClass.startLogger();S
+	    new Thread(new Runnable() {
+	        @Override
+	        public void run() {
+	            try {
+	                MulticastSocket socket = new MulticastSocket(port);
+	                socket.setInterface(InetAddress.getLocalHost());
+	                socket.joinGroup(group);
 
-		double capacity1;
-		double capacity2;
+	                DatagramPacket packet = new DatagramPacket(new byte[100], 100);
+	                while(true) {
+	                    socket.receive(packet);
+	                    System.out.println("Got packet " + 
+	                            Arrays.toString(packet.getData()));
+	                }
+	            } catch (Exception e) {
+	                e.printStackTrace();
+	            }
+	        }
+	    }).start();
 
-		while (true) {
-			// capacity1 = svwInstance.getMean()[1];
-			// capacity2 = svwInstance.getMean()[2];
-			capacity1 = 1.234;
-			capacity2 = 5.678;
+	    new Thread(new Runnable() {
+	        @Override
+	        public void run() {
+	            try {
+	                MulticastSocket socket = new MulticastSocket(port);
+	                socket.setInterface(InetAddress.getLocalHost());
+	                socket.joinGroup(group);
 
-			String message = String.valueOf(capacity1) + " " + String.valueOf(capacity2);
-
-			 //hlc.SendOverMulticast(message);
-			 //hlc.listen();
-			//hlc.multicast(message);
-			//(hlc.sendTest(message);
-			hlc.listenTest();
-		}
+	                byte[] bt = new byte[100];
+	                byte index = 0;
+	                while(true) {
+	                    Arrays.fill(bt, (byte) index++);
+	                    socket.send(new DatagramPacket(bt, 100, group, port));
+	                    System.out.println("sent 100 bytes");
+	                    Thread.sleep(1*1000);
+	                }
+	            } catch (Exception e) {
+	                e.printStackTrace();
+	            }
+	        }
+	    }).start();
 
 		// if(sendDataToHololens)
 		// hlc.Connect(port);
