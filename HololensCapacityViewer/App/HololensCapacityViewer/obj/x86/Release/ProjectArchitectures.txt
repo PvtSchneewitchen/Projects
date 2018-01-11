@@ -1,2 +1,0 @@
-C:\Users\gruepazu\Documents\Github\Projects\HololensCapacityViewer\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;x86
-C:\Users\gruepazu\Documents\Github\Projects\HololensCapacityViewer\App\HololensCapacityViewer\HololensCapacityViewer.csproj;x86

@@ -40,6 +40,7 @@ public class SensorViewer {
 			message = String.valueOf(capacity1) + " " + String.valueOf(capacity2);
 			
 			hlc.multicast(message);
+			//hlc.listen();
 		}
 	}
 

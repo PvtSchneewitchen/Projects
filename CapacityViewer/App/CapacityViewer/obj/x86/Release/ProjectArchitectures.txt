@@ -1,0 +1,2 @@
+C:\Users\gruepazu\Documents\Github\Projects\CapacityViewer\App\CapacityViewer\CapacityViewer.csproj;x86
+C:\Users\gruepazu\Documents\Github\Projects\CapacityViewer\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;x86
