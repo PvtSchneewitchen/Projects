@@ -14,11 +14,12 @@ public class SensorViewer {
 
 	static double capacity1;
 	static double capacity2;
+	static String message;
 
 	public static void main(String[] args) throws Exception {
 		HololensConnection hlc = new HololensConnection();
-		// SensorModel model = new SensorModel();
-		// SensorViewerWindow svwInstance = new SensorViewerWindow(model);
+//		 SensorModel model = new SensorModel();
+//		 SensorViewerWindow svwInstance = new SensorViewerWindow(model);
 		// svwInstance.setVisible(true);
 
 		// ViconAccess viconClass = new ViconAccess();
@@ -32,61 +33,14 @@ public class SensorViewer {
 		
 		while(true)
 		{
-			hlc.multicast("hallo");
-			hlc.listen();
+			SimulateCapacities();
+//			capacity1 = svwInstance.getMean()[0];
+//			capacity2 = svwInstance.getMean()[1];
+			
+			message = String.valueOf(capacity1) + " " + String.valueOf(capacity2);
+			
+			hlc.multicast(message);
 		}
-		
-
-//		// sending thread
-//		new Thread(new Runnable() {
-//			@Override
-//			public void run() {
-//				try {
-//					@SuppressWarnings("resource")
-//					MulticastSocket socket = new MulticastSocket(port);
-//					socket.setInterface(InetAddress.getLocalHost());
-//					socket.joinGroup(group);
-//
-//					while (true) {
-//						// either
-//						SimulateCapacities();
-//						//or
-//						// capacity1 = svwInstance.getMean()[1];
-//						// capacity2 = svwInstance.getMean()[2];
-//
-//						String message = String.valueOf(capacity1) + " " + String.valueOf(capacity2);
-//						byte[] bt = message.getBytes();
-//
-//						socket.send(new DatagramPacket(bt, bt.length, group, port));
-//						System.out.println("sent: " + new String(bt));
-//						Thread.sleep(1 * 100);
-//					}
-//				} catch (Exception e) {
-//					e.printStackTrace();
-//				}
-//			}
-//		}).start();
-//
-//		// listening thread
-//		new Thread(new Runnable() {
-//			@Override
-//			public void run() {
-//				try {
-//					@SuppressWarnings("resource")
-//					MulticastSocket socket = new MulticastSocket(port);
-//					socket.setInterface(InetAddress.getLocalHost());
-//					socket.joinGroup(group);
-//
-//					DatagramPacket packet = new DatagramPacket(new byte[256], 256);
-//					while (true) {
-//						socket.receive(packet);
-//						System.out.println("Got message: " + new String(packet.getData()));
-//					}
-//				} catch (Exception e) {
-//					e.printStackTrace();
-//				}
-//			}
-//		}).start();
 	}
 
 	public static void SimulateCapacities() {
