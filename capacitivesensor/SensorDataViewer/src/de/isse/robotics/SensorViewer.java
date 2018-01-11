@@ -16,6 +16,7 @@ public class SensorViewer {
 	static double capacity2;
 
 	public static void main(String[] args) throws Exception {
+		HololensConnection hlc = new HololensConnection();
 		// SensorModel model = new SensorModel();
 		// SensorViewerWindow svwInstance = new SensorViewerWindow(model);
 		// svwInstance.setVisible(true);
@@ -27,9 +28,16 @@ public class SensorViewer {
 		capacity1 = 32.55f;
 		capacity2 = 16.75f;
 
-		final InetAddress group = InetAddress.getByName(address);
+		hlc.InitMulticast(address, port);
+		
+		while(true)
+		{
+			hlc.multicast("hallo");
+			hlc.listen();
+		}
+		
 
-		// sending thread
+//		// sending thread
 //		new Thread(new Runnable() {
 //			@Override
 //			public void run() {
@@ -51,34 +59,34 @@ public class SensorViewer {
 //
 //						socket.send(new DatagramPacket(bt, bt.length, group, port));
 //						System.out.println("sent: " + new String(bt));
-//						Thread.sleep(1 * 1000);
+//						Thread.sleep(1 * 100);
 //					}
 //				} catch (Exception e) {
 //					e.printStackTrace();
 //				}
 //			}
 //		}).start();
-
-		// listening thread
-		new Thread(new Runnable() {
-			@Override
-			public void run() {
-				try {
-					@SuppressWarnings("resource")
-					MulticastSocket socket = new MulticastSocket(port);
-					socket.setInterface(InetAddress.getLocalHost());
-					socket.joinGroup(group);
-
-					DatagramPacket packet = new DatagramPacket(new byte[256], 256);
-					while (true) {
-						socket.receive(packet);
-						System.out.println("Got message: " + new String(packet.getData()));
-					}
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		}).start();
+//
+//		// listening thread
+//		new Thread(new Runnable() {
+//			@Override
+//			public void run() {
+//				try {
+//					@SuppressWarnings("resource")
+//					MulticastSocket socket = new MulticastSocket(port);
+//					socket.setInterface(InetAddress.getLocalHost());
+//					socket.joinGroup(group);
+//
+//					DatagramPacket packet = new DatagramPacket(new byte[256], 256);
+//					while (true) {
+//						socket.receive(packet);
+//						System.out.println("Got message: " + new String(packet.getData()));
+//					}
+//				} catch (Exception e) {
+//					e.printStackTrace();
+//				}
+//			}
+//		}).start();
 	}
 
 	public static void SimulateCapacities() {

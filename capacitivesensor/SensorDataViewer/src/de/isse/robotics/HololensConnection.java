@@ -4,50 +4,30 @@ import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.InetAddress;
 import java.net.MulticastSocket;
+import java.net.UnknownHostException;
 import java.util.Arrays;
 
 public class HololensConnection {
+	private MulticastSocket socket;
+	private InetAddress group;
 
-	final String defaultAdress = "237.0.0.1";
-	//
-	final int defaultPort = 9000;
-
-	
-
-	public void multicast(String message) throws IOException {
-		try {
-			final InetAddress group = InetAddress.getByName(defaultAdress);
-			MulticastSocket socket = new MulticastSocket(defaultPort);
-			socket.setInterface(InetAddress.getLocalHost());
-			socket.joinGroup(group);
-
-			byte[] buf = message.getBytes();
-
-			socket.send(new DatagramPacket(buf, buf.length, group, defaultPort));
-			System.out.println("Following message sent: " + new String(buf));
-			socket.close();
-
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+	public void InitMulticast(String ipAdress, int port) throws IOException {
+		group = InetAddress.getByName(ipAdress);
+		socket = new MulticastSocket(port);
+		socket.setInterface(InetAddress.getLocalHost());
+		socket.joinGroup(group);
 	}
-	
+
+	public void multicast(String message) throws IOException, InterruptedException {
+		byte[] bt = message.getBytes();	
+		socket.send(new DatagramPacket(bt, bt.length, group, socket.getLocalPort()));
+		System.out.println("sent: " + new String(bt));
+		Thread.sleep(1 * 100);
+	}
+
 	public void listen() throws IOException {
-
-		try {
-			final InetAddress group = InetAddress.getByName(defaultAdress);
-			MulticastSocket socket = new MulticastSocket(defaultPort);
-			socket.setInterface(InetAddress.getLocalHost());
-			socket.joinGroup(group);
-
-			byte[] buf = new byte[256];
-			DatagramPacket packet = new DatagramPacket(buf, buf.length);
-
-			socket.receive(packet);
-			System.out.println("Got message: " + new String(packet.getData()));
-			socket.close();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		DatagramPacket packet = new DatagramPacket(new byte[256], 256);
+		socket.receive(packet);
+		System.out.println("Got message: " + new String(packet.getData()));
 	}
 }
