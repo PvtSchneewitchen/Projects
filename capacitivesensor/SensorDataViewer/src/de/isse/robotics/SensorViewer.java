@@ -29,7 +29,7 @@ public class SensorViewer {
 		capacity1 = 32.55f;
 		capacity2 = 16.75f;
 
-		hlc.InitMulticast(address, port);
+		hlc.Multicast_Init(address, port);
 		
 		while(true)
 		{
@@ -39,8 +39,9 @@ public class SensorViewer {
 			
 			message = String.valueOf(capacity1) + " " + String.valueOf(capacity2);
 			
-			hlc.multicast(message);
-			//hlc.listen();
+			hlc.Multicast_Send(message);
+			//hlc.Multicast_Listen();
+			
 		}
 	}
 

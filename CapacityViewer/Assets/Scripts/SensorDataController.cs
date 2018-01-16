@@ -19,10 +19,13 @@ public class SensorDataController : MonoBehaviour
     public float _fCapacity1 { get; private set; }
     public float _fCapacity2 { get; private set; }
 
-    private string multicastPort = "9000";
-    private string multicastAddress = "237.0.0.1";
+    private string _multicastPort = "9000";
+    private string _multicastAddress = "237.0.0.1";
+    private string message;
 #if !UNITY_EDITOR
     private DatagramSocket _socket;
+    private IOutputStream outputStream;
+    private DataWriter writer;
 #endif
 
     private bool _bUseUdpData = true;
@@ -62,32 +65,38 @@ public class SensorDataController : MonoBehaviour
             if (_fCapacity2 >= 16.94f)
                 _fCapacity2 = 16.75f;
         }
+
+        MulticastAsync("Hello From Emulator!");
     }
 
 #if !UNITY_EDITOR
     private async void InitConnection()
     {
-        print("Enable Listener at Port " + multicastPort + "...");
+        print("Initializing socket...");
+
         _socket = new DatagramSocket();
         _socket.Control.MulticastOnly = true;
         _socket.MessageReceived += Socket_MessageReceived;
 
-        await _socket.BindServiceNameAsync(multicastPort);
-        _socket.JoinMulticastGroup(new HostName(multicastAddress));
+        print("Listening enabled!");
 
-        try
-        {
-            IOutputStream outputStream = await _socket.GetOutputStreamAsync(new HostName(multicastAddress), multicastPort);
-            DataWriter writer = new DataWriter(outputStream);
-            writer.WriteString("Test");
-            await writer.StoreAsync();
-            print("Testmessage Sendt");
-        }catch(Exception e)
-        {
-            print("Unable to Send Testmessage");
-        }
+        await _socket.BindServiceNameAsync(_multicastPort);
+        _socket.JoinMulticastGroup(new HostName(_multicastAddress));
+        outputStream = await _socket.GetOutputStreamAsync(new HostName(_multicastAddress), _multicastPort);
+        writer = new DataWriter(outputStream);
 
-        print("Listener Enabled!");
+        print("Socket initialized!");
+
+        MulticastAsync("This is a TestMessage");
+
+        print("Test message sent!");
+    }
+
+    public async void MulticastAsync(string message)
+    {
+        writer.WriteString(message);
+        await writer.StoreAsync();
+        print("sent: " + message);
     }
 
 
@@ -98,7 +107,7 @@ public class SensorDataController : MonoBehaviour
         string recievedMessage = await streamReader.ReadLineAsync();
 
         //todo do THings with message
-        print(recievedMessage);
+        print("received: " + recievedMessage);
 
         //var values = recievedMessage.Split(' ');
         //float temp1 = float.Parse(values[0]);

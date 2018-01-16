@@ -1,1 +1,0 @@
-C:\Users\gruepazu\Documents\Github\Projects\UdpConnectionNew\AppExperimental\UdpConnectionNew\UdpConnectionNew.csproj;x86
